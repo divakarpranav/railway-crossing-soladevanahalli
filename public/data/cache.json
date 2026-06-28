@@ -1,0 +1,39 @@
+{
+  "kjm": {
+    "stationCode": "KJM",
+    "trains": [
+      {
+        "trainNo": "12628",
+        "trainName": "Karnataka Express",
+        "status": "departed",
+        "scheduledDepartureTime": "10:18",
+        "expectedDepartureTime": "10:18",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "06579",
+        "trainName": "Bengaluru Special",
+        "status": "scheduled",
+        "scheduledDepartureTime": "10:55",
+        "expectedDepartureTime": "10:55",
+        "delayMinutes": 0
+      }
+    ],
+    "fetchedAt": "2026-06-28T04:45:00Z"
+  },
+  "blrr": {
+    "stationCode": "BLRR",
+    "trains": [
+      {
+        "trainNo": "16526",
+        "trainName": "Island Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "10:28",
+        "expectedDepartureTime": "10:28",
+        "delayMinutes": 0
+      }
+    ],
+    "fetchedAt": "2026-06-28T04:45:00Z"
+  },
+  "generatedAt": "2026-06-28T04:45:00Z"
+}

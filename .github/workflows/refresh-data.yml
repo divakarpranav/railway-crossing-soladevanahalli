@@ -1,0 +1,108 @@
+name: Refresh crossing data
+
+on:
+  schedule:
+    # Every 10 minutes — uses ~288 calls/day for the two station boards
+    - cron: '*/10 * * * *'
+  workflow_dispatch:    # allow manual trigger from GitHub UI
+
+permissions:
+  contents: write       # needed to commit cache.json back to the repo
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Fetch live boards and write cache
+        env:
+          RAILRADAR_BASE: ${{ secrets.RAILRADAR_BASE }}
+          RAILRADAR_KEY:  ${{ secrets.RAILRADAR_KEY }}
+        run: |
+          set -euo pipefail
+          NOW=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
+          # ── Helper: fetch with retries ──────────────────────────────────────
+          fetch_json() {
+            local url="$1"
+            local retries=3
+            for i in $(seq 1 $retries); do
+              HTTP=$(curl -s -o /tmp/body.json -w "%{http_code}" \
+                -H "x-api-key: ${RAILRADAR_KEY}" \
+                -H "Accept: application/json" \
+                --max-time 15 \
+                "$url")
+              if [ "$HTTP" = "200" ]; then
+                cat /tmp/body.json
+                return 0
+              fi
+              echo "Attempt $i failed (HTTP $HTTP) for $url" >&2
+              sleep 3
+            done
+            echo "null"
+          }
+
+          # ── Fetch both station live boards ──────────────────────────────────
+          KJM_DATA=$(fetch_json "${RAILRADAR_BASE}/v1/stations/KJM/live")
+          BLRR_DATA=$(fetch_json "${RAILRADAR_BASE}/v1/stations/BLRR/live")
+
+          # ── Validate responses ──────────────────────────────────────────────
+          if [ "$KJM_DATA" = "null" ] || [ "$BLRR_DATA" = "null" ]; then
+            echo "One or both API calls failed. Aborting to preserve last good cache."
+            exit 0
+          fi
+
+          # ── Build merged cache JSON ─────────────────────────────────────────
+          mkdir -p public/data
+
+          python3 - << PYEOF
+          import json, sys
+
+          kjm_raw  = json.loads('''${KJM_DATA}''')
+          blrr_raw = json.loads('''${BLRR_DATA}''')
+
+          def normalise(raw, code):
+              """Normalise RailRadar live board response to our schema."""
+              trains = []
+              entries = raw.get("trains") or raw.get("data") or []
+              for t in entries:
+                  trains.append({
+                      "trainNo":                t.get("trainNo") or t.get("train_number", ""),
+                      "trainName":              t.get("trainName") or t.get("train_name", ""),
+                      "status":                 t.get("status", "scheduled"),
+                      "scheduledDepartureTime": t.get("scheduledDepartureTime") or t.get("sched_dep", ""),
+                      "expectedDepartureTime":  t.get("expectedDepartureTime") or t.get("exp_dep", ""),
+                      "delayMinutes":           int(t.get("delayMinutes") or t.get("delay", 0) or 0),
+                  })
+              return {"stationCode": code, "trains": trains, "fetchedAt": "${NOW}"}
+
+          cache = {
+              "kjm":         normalise(kjm_raw,  "KJM"),
+              "blrr":        normalise(blrr_raw, "BLRR"),
+              "generatedAt": "${NOW}",
+          }
+
+          with open("public/data/cache.json", "w") as f:
+              json.dump(cache, f, indent=2)
+
+          print(f"Wrote cache: KJM={len(cache['kjm']['trains'])} trains, BLRR={len(cache['blrr']['trains'])} trains")
+          PYEOF
+
+      - name: Commit updated cache
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/cache.json
+          # Only commit if there are actual changes
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: refresh crossing data [skip ci]"
+            git push
+          fi
