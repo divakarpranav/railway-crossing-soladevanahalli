@@ -100,7 +100,14 @@ jobs:
               if isinstance(raw, list):
                   entries = raw
               elif isinstance(raw, dict):
-                  entries = raw.get("trains") or raw.get("data") or []
+                  data_field = raw.get("data")
+                  if isinstance(data_field, dict):
+                      entries = data_field.get("trains") or data_field.get("data") or []
+                  else:
+                      entries = raw.get("trains") or raw.get("data") or []
+                  
+                  if isinstance(entries, dict):
+                      entries = entries.get("trains") or []
               else:
                   print(f"Warning: unexpected type for {code}: {type(raw)}")
                   entries = []
