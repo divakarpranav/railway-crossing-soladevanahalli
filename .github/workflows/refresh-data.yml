@@ -26,7 +26,7 @@ jobs:
           RAILRADAR_KEY:  ${{ secrets.RAILRADAR_KEY }}
         run: |
           set -euo pipefail
-          NOW=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          export NOW=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
           # ── Helper: fetch with retries ──────────────────────────────────────
           fetch_json() {
@@ -49,8 +49,8 @@ jobs:
           }
 
           # ── Fetch both station live boards ──────────────────────────────────
-          KJM_DATA=$(fetch_json "${RAILRADAR_BASE}/v1/stations/KJM/live")
-          BLRR_DATA=$(fetch_json "${RAILRADAR_BASE}/v1/stations/BLRR/live")
+          export KJM_DATA=$(fetch_json "${RAILRADAR_BASE}/v1/stations/KJM/live")
+          export BLRR_DATA=$(fetch_json "${RAILRADAR_BASE}/v1/stations/BLRR/live")
 
           # ── Validate responses ──────────────────────────────────────────────
           if [ "$KJM_DATA" = "null" ] || [ "$BLRR_DATA" = "null" ]; then
@@ -61,17 +61,53 @@ jobs:
           # ── Build merged cache JSON ─────────────────────────────────────────
           mkdir -p public/data
 
-          python3 - << PYEOF
-          import json, sys
+          python3 - << 'PYEOF'
+          import json, sys, os
 
-          kjm_raw  = json.loads('''${KJM_DATA}''')
-          blrr_raw = json.loads('''${BLRR_DATA}''')
+          kjm_data_str = os.environ.get("KJM_DATA", "null")
+          blrr_data_str = os.environ.get("BLRR_DATA", "null")
+
+          print(f"Raw KJM_DATA: {kjm_data_str[:200]}")
+          print(f"Raw BLRR_DATA: {blrr_data_str[:200]}")
+
+          try:
+              kjm_raw = json.loads(kjm_data_str)
+          except Exception as e:
+              print(f"Error parsing KJM_DATA as JSON: {e}")
+              kjm_raw = None
+
+          try:
+              blrr_raw = json.loads(blrr_data_str)
+          except Exception as e:
+              print(f"Error parsing BLRR_DATA as JSON: {e}")
+              blrr_raw = None
 
           def normalise(raw, code):
               """Normalise RailRadar live board response to our schema."""
+              if not raw:
+                  return {"stationCode": code, "trains": [], "fetchedAt": os.environ.get("NOW", "")}
+              
+              # Handle double-serialized JSON string
+              if isinstance(raw, str):
+                  try:
+                      raw = json.loads(raw)
+                  except Exception:
+                      print(f"Warning: expected JSON object for {code}, but got string: {raw}")
+                      return {"stationCode": code, "trains": [], "fetchedAt": os.environ.get("NOW", "")}
+
               trains = []
-              entries = raw.get("trains") or raw.get("data") or []
+              
+              if isinstance(raw, list):
+                  entries = raw
+              elif isinstance(raw, dict):
+                  entries = raw.get("trains") or raw.get("data") or []
+              else:
+                  print(f"Warning: unexpected type for {code}: {type(raw)}")
+                  entries = []
+
               for t in entries:
+                  if not isinstance(t, dict):
+                      continue
                   trains.append({
                       "trainNo":                t.get("trainNo") or t.get("train_number", ""),
                       "trainName":              t.get("trainName") or t.get("train_name", ""),
@@ -80,12 +116,12 @@ jobs:
                       "expectedDepartureTime":  t.get("expectedDepartureTime") or t.get("exp_dep", ""),
                       "delayMinutes":           int(t.get("delayMinutes") or t.get("delay", 0) or 0),
                   })
-              return {"stationCode": code, "trains": trains, "fetchedAt": "${NOW}"}
+              return {"stationCode": code, "trains": trains, "fetchedAt": os.environ.get("NOW", "")}
 
           cache = {
               "kjm":         normalise(kjm_raw,  "KJM"),
               "blrr":        normalise(blrr_raw, "BLRR"),
-              "generatedAt": "${NOW}",
+              "generatedAt": os.environ.get("NOW", ""),
           }
 
           with open("public/data/cache.json", "w") as f:
