@@ -3,6 +3,14 @@
     "stationCode": "KJM",
     "trains": [
       {
+        "trainNo": "66519",
+        "trainName": "Marikuppam - KSR Bengaluru MEMU",
+        "status": "scheduled",
+        "scheduledDepartureTime": "05:49",
+        "expectedDepartureTime": "05:49",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "16021",
         "trainName": "Kaveri Express",
         "status": "scheduled",
@@ -35,12 +43,12 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T20:10:17Z"
+    "fetchedAt": "2026-06-30T20:20:17Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-06-30T20:10:17Z"
+    "fetchedAt": "2026-06-30T20:20:17Z"
   },
-  "generatedAt": "2026-06-30T20:10:17Z"
+  "generatedAt": "2026-06-30T20:20:17Z"
 }
