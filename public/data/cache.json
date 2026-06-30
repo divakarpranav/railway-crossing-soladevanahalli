@@ -11,19 +11,19 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "16526",
-        "trainName": "Kanniyakumari Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "20:36",
-        "expectedDepartureTime": "20:36",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "16224",
         "trainName": "Radhikapur - SMVT Bengaluru Passenger",
         "status": "scheduled",
         "scheduledDepartureTime": "19:50",
         "expectedDepartureTime": "19:50",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "16526",
+        "trainName": "Kanniyakumari Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "20:36",
+        "expectedDepartureTime": "20:36",
         "delayMinutes": 0
       },
       {
@@ -75,6 +75,14 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "16022",
+        "trainName": "Kaveri Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "00:15",
+        "expectedDepartureTime": "00:15",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "66520",
         "trainName": "KSR Bengaluru - Marikuppam MEMU",
         "status": "scheduled",
@@ -107,12 +115,12 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T14:42:51Z"
+    "fetchedAt": "2026-06-30T15:01:34Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-06-30T14:42:51Z"
+    "fetchedAt": "2026-06-30T15:01:34Z"
   },
-  "generatedAt": "2026-06-30T14:42:51Z"
+  "generatedAt": "2026-06-30T15:01:34Z"
 }
