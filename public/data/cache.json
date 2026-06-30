@@ -3,27 +3,11 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "12639",
-        "trainName": "Brindavan Express",
+        "trainNo": "22626",
+        "trainName": "MGR Chennai Central Double Decker Express",
         "status": "scheduled",
-        "scheduledDepartureTime": "12:50",
-        "expectedDepartureTime": "12:50",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "06007",
-        "trainName": "Banaras Special Fare Kashi Tamil Sangamam Special",
-        "status": "scheduled",
-        "scheduledDepartureTime": "12:45",
-        "expectedDepartureTime": "12:45",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "66511",
-        "trainName": "KSR Bengaluru - Marikuppam MEMU",
-        "status": "scheduled",
-        "scheduledDepartureTime": "12:50",
-        "expectedDepartureTime": "12:50",
+        "scheduledDepartureTime": "13:54",
+        "expectedDepartureTime": "13:54",
         "delayMinutes": 0
       },
       {
@@ -67,11 +51,11 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "22626",
-        "trainName": "MGR Chennai Central Double Decker Express",
+        "trainNo": "16315",
+        "trainName": "Thiruvananthapuram North Express",
         "status": "scheduled",
-        "scheduledDepartureTime": "13:54",
-        "expectedDepartureTime": "13:54",
+        "scheduledDepartureTime": "17:00",
+        "expectedDepartureTime": "17:00",
         "delayMinutes": 0
       },
       {
@@ -91,23 +75,23 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "66514",
+        "trainName": "Krishnarajapuram MEMU",
+        "status": "scheduled",
+        "scheduledDepartureTime": "",
+        "expectedDepartureTime": "",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "04131",
         "trainName": "Kanpur Central - SMVT Bengaluru Passenger",
         "status": "scheduled",
         "scheduledDepartureTime": "16:25",
         "expectedDepartureTime": "16:25",
         "delayMinutes": 0
-      },
-      {
-        "trainNo": "66581",
-        "trainName": "KSR Bengaluru - Bangarapet MEMU",
-        "status": "scheduled",
-        "scheduledDepartureTime": "12:10",
-        "expectedDepartureTime": "12:10",
-        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T07:22:48Z"
+    "fetchedAt": "2026-06-30T08:03:10Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -137,7 +121,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T07:22:48Z"
+    "fetchedAt": "2026-06-30T08:03:10Z"
   },
-  "generatedAt": "2026-06-30T07:22:48Z"
+  "generatedAt": "2026-06-30T08:03:10Z"
 }
