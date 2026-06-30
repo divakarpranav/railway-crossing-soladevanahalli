@@ -83,6 +83,22 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "12607",
+        "trainName": "Lalbagh SF Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "20:45",
+        "expectedDepartureTime": "20:45",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "16219",
+        "trainName": "Tirupati Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "20:47",
+        "expectedDepartureTime": "20:47",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "16224",
         "trainName": "Radhikapur - SMVT Bengaluru Passenger",
         "status": "scheduled",
@@ -139,7 +155,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T11:06:27Z"
+    "fetchedAt": "2026-06-30T11:16:23Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -177,7 +193,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T11:06:27Z"
+    "fetchedAt": "2026-06-30T11:16:23Z"
   },
-  "generatedAt": "2026-06-30T11:06:27Z"
+  "generatedAt": "2026-06-30T11:16:23Z"
 }
