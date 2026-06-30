@@ -59,6 +59,14 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "20663",
+        "trainName": "MGR Chennai Central Vande Bharat Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "08:06",
+        "expectedDepartureTime": "08:06",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "16316",
         "trainName": "Mysuru Express",
         "status": "scheduled",
@@ -107,7 +115,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T22:30:16Z"
+    "fetchedAt": "2026-06-30T22:40:16Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -137,7 +145,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T22:30:16Z"
+    "fetchedAt": "2026-06-30T22:40:16Z"
   },
-  "generatedAt": "2026-06-30T22:30:16Z"
+  "generatedAt": "2026-06-30T22:40:16Z"
 }
