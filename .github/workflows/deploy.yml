@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+  schedule:
+    - cron: '*/5 * * * *'   # rebuild + redeploy every 5 min, in sync with data refresh
   workflow_dispatch:
 
 permissions:
@@ -17,9 +19,7 @@ concurrency:
 
 jobs:
   build:
-    if: github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip ci]')
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -42,7 +42,6 @@ jobs:
       - name: Ensure cache exists
         run: |
           mkdir -p dist/data
-
           if [ -f public/data/cache.json ]; then
             cp public/data/cache.json dist/data/cache.json
           else
@@ -58,11 +57,9 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
