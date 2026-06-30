@@ -83,6 +83,14 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "22618",
+        "trainName": "Tirupati Intercity SF Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "07:55",
+        "expectedDepartureTime": "07:55",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "66538",
         "trainName": "SMVT Bengaluru - Bangarapet Junction Passenger",
         "status": "scheduled",
@@ -99,7 +107,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T22:20:19Z"
+    "fetchedAt": "2026-06-30T22:30:16Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -129,7 +137,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T22:20:19Z"
+    "fetchedAt": "2026-06-30T22:30:16Z"
   },
-  "generatedAt": "2026-06-30T22:20:19Z"
+  "generatedAt": "2026-06-30T22:30:16Z"
 }
