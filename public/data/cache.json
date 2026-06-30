@@ -19,6 +19,14 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "16220",
+        "trainName": "Chamarajanagar Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "03:20",
+        "expectedDepartureTime": "03:20",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "06545",
         "trainName": "Vijayapura Special Fare Special",
         "status": "scheduled",
@@ -27,12 +35,12 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T17:40:19Z"
+    "fetchedAt": "2026-06-30T17:50:17Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-06-30T17:40:19Z"
+    "fetchedAt": "2026-06-30T17:50:17Z"
   },
-  "generatedAt": "2026-06-30T17:40:19Z"
+  "generatedAt": "2026-06-30T17:50:17Z"
 }
