@@ -35,6 +35,14 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "04132",
+        "trainName": "SMVT Bengaluru - Kanpur Central Passenger",
+        "status": "scheduled",
+        "scheduledDepartureTime": "07:25",
+        "expectedDepartureTime": "07:25",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "66546",
         "trainName": "KSR Bengaluru - Marikuppam MEMU",
         "status": "scheduled",
@@ -43,11 +51,11 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "04132",
-        "trainName": "SMVT Bengaluru - Kanpur Central Passenger",
+        "trainNo": "66555",
+        "trainName": "Marikuppam - KSR Bengaluru MEMU",
         "status": "scheduled",
-        "scheduledDepartureTime": "07:25",
-        "expectedDepartureTime": "07:25",
+        "scheduledDepartureTime": "07:51",
+        "expectedDepartureTime": "07:51",
         "delayMinutes": 0
       },
       {
@@ -91,7 +99,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T22:10:18Z"
+    "fetchedAt": "2026-06-30T22:20:19Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -111,9 +119,17 @@
         "scheduledDepartureTime": "07:07",
         "expectedDepartureTime": "07:07",
         "delayMinutes": 0
+      },
+      {
+        "trainNo": "16529",
+        "trainName": "Karaikal Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "07:49",
+        "expectedDepartureTime": "07:49",
+        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T22:10:18Z"
+    "fetchedAt": "2026-06-30T22:20:19Z"
   },
-  "generatedAt": "2026-06-30T22:10:18Z"
+  "generatedAt": "2026-06-30T22:20:19Z"
 }
