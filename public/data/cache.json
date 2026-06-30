@@ -17,22 +17,14 @@
         "scheduledDepartureTime": "23:55",
         "expectedDepartureTime": "23:55",
         "delayMinutes": 0
-      },
-      {
-        "trainNo": "26652",
-        "trainName": "KSR Bengaluru Vande Bharat Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "22:25",
-        "expectedDepartureTime": "22:25",
-        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T17:00:21Z"
+    "fetchedAt": "2026-06-30T17:10:18Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-06-30T17:00:21Z"
+    "fetchedAt": "2026-06-30T17:10:18Z"
   },
-  "generatedAt": "2026-06-30T17:00:21Z"
+  "generatedAt": "2026-06-30T17:10:18Z"
 }
