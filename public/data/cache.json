@@ -3,14 +3,6 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "66530",
-        "trainName": "Bangarapet Junction SBC-BWT MEMU",
-        "status": "scheduled",
-        "scheduledDepartureTime": "10:05",
-        "expectedDepartureTime": "10:05",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "66541",
         "trainName": "Whitefield - KSR Bengaluru MEMU",
         "status": "scheduled",
@@ -59,19 +51,19 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "12639",
-        "trainName": "Brindavan Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "12:50",
-        "expectedDepartureTime": "12:50",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "06007",
         "trainName": "Banaras Special Fare Kashi Tamil Sangamam Special",
         "status": "scheduled",
         "scheduledDepartureTime": "12:45",
         "expectedDepartureTime": "12:45",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "12639",
+        "trainName": "Brindavan Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "12:50",
+        "expectedDepartureTime": "12:50",
         "delayMinutes": 0
       },
       {
@@ -139,7 +131,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T04:37:36Z"
+    "fetchedAt": "2026-06-30T04:57:06Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -153,7 +145,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T04:37:36Z"
+    "fetchedAt": "2026-06-30T04:57:06Z"
   },
-  "generatedAt": "2026-06-30T04:37:36Z"
+  "generatedAt": "2026-06-30T04:57:06Z"
 }
