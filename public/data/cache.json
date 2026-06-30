@@ -25,14 +25,22 @@
         "scheduledDepartureTime": "03:20",
         "expectedDepartureTime": "03:20",
         "delayMinutes": 0
+      },
+      {
+        "trainNo": "66538",
+        "trainName": "SMVT Bengaluru - Bangarapet Junction Passenger",
+        "status": "scheduled",
+        "scheduledDepartureTime": "04:22",
+        "expectedDepartureTime": "04:22",
+        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T18:50:17Z"
+    "fetchedAt": "2026-06-30T19:00:18Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-06-30T18:50:17Z"
+    "fetchedAt": "2026-06-30T19:00:18Z"
   },
-  "generatedAt": "2026-06-30T18:50:17Z"
+  "generatedAt": "2026-06-30T19:00:18Z"
 }
