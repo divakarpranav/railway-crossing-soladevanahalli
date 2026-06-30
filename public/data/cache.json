@@ -3,19 +3,19 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "12863",
-        "trainName": "SMVT Bengaluru SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "05:55",
-        "expectedDepartureTime": "05:55",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "16525",
         "trainName": "KSR Bengaluru Express",
         "status": "scheduled",
         "scheduledDepartureTime": "06:12",
         "expectedDepartureTime": "06:12",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "12863",
+        "trainName": "SMVT Bengaluru SF Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "05:55",
+        "expectedDepartureTime": "05:55",
         "delayMinutes": 0
       },
       {
@@ -99,6 +99,14 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "15228",
+        "trainName": "SMVT Bengaluru Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "08:40",
+        "expectedDepartureTime": "08:40",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "66519",
         "trainName": "Marikuppam - KSR Bengaluru MEMU",
         "status": "scheduled",
@@ -123,7 +131,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T23:00:18Z"
+    "fetchedAt": "2026-06-30T23:10:16Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -153,7 +161,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T23:00:18Z"
+    "fetchedAt": "2026-06-30T23:10:16Z"
   },
-  "generatedAt": "2026-06-30T23:00:18Z"
+  "generatedAt": "2026-06-30T23:10:16Z"
 }
