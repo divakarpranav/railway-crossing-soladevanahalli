@@ -26,22 +26,22 @@ export const PREDICTION_CONFIG = {
 
 // ── Where to fetch cache.json from ───────────────────────────────────────────
 //
-// PROBLEM: cache.json is updated by GitHub Actions every 10 min (committed to
-// the repo), but the GitHub Pages *site* is only rebuilt on push to master.
-// So fetching from the Pages URL (BASE_URL/data/cache.json) always returns the
-// stale version baked into the last build.
+// PROBLEM: cache.json is updated by GitHub Actions every 5 min (committed to
+// the repo), but the GitHub Pages *site* is only rebuilt when deploy.yml runs.
+// Fetching from the Pages URL (BASE_URL/data/cache.json) returns whatever was
+// baked into the build at deploy time — it goes stale the moment new data
+// lands in the repo without a fresh deploy.
 //
 // SOLUTION: fetch directly from raw.githubusercontent.com, which always serves
-// the latest committed file — no rebuild needed.
+// the latest committed file instantly — no rebuild or redeploy ever needed
+// for data updates.
 //
-// Set VITE_GH_USER and VITE_GH_REPO at build time (see deploy.yml).
-// Falls back to the Pages-bundled copy if env vars are missing.
+// Hardcoded (not env-var-based) so this works immediately regardless of
+// whether build-time secrets/vars are configured correctly.
 
-const GH_USER = import.meta.env.VITE_GH_USER  // e.g. "BxtGeek"
-const GH_REPO = import.meta.env.VITE_GH_REPO  // e.g. "railway-crossing-data"
-const GH_BRANCH = import.meta.env.VITE_GH_BRANCH ?? 'master'
+const GH_USER   = 'BxtGeek'
+const GH_REPO   = 'railway-crossing-data'
+const GH_BRANCH = 'master'
 
 export const CACHE_JSON_URL =
-  GH_USER && GH_REPO
-    ? `https://raw.githubusercontent.com/${GH_USER}/${GH_REPO}/${GH_BRANCH}/public/data/cache.json`
-    : import.meta.env.BASE_URL + 'data/cache.json'
+  `https://raw.githubusercontent.com/${GH_USER}/${GH_REPO}/${GH_BRANCH}/public/data/cache.json`
