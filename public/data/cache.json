@@ -3,14 +3,6 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "20664",
-        "trainName": "Mysuru Vande Bharat Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "20:50",
-        "expectedDepartureTime": "20:50",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "66520",
         "trainName": "KSR Bengaluru - Marikuppam MEMU",
         "status": "scheduled",
@@ -75,12 +67,12 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T15:40:18Z"
+    "fetchedAt": "2026-06-30T15:50:17Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-06-30T15:40:18Z"
+    "fetchedAt": "2026-06-30T15:50:17Z"
   },
-  "generatedAt": "2026-06-30T15:40:18Z"
+  "generatedAt": "2026-06-30T15:50:17Z"
 }
