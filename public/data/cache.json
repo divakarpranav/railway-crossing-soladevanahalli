@@ -3,11 +3,11 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "16219",
-        "trainName": "Tirupati Express",
+        "trainNo": "16224",
+        "trainName": "Radhikapur - SMVT Bengaluru Passenger",
         "status": "scheduled",
-        "scheduledDepartureTime": "20:47",
-        "expectedDepartureTime": "20:47",
+        "scheduledDepartureTime": "19:50",
+        "expectedDepartureTime": "19:50",
         "delayMinutes": 0
       },
       {
@@ -83,12 +83,12 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T15:25:31Z"
+    "fetchedAt": "2026-06-30T15:30:30Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-06-30T15:25:31Z"
+    "fetchedAt": "2026-06-30T15:30:30Z"
   },
-  "generatedAt": "2026-06-30T15:25:31Z"
+  "generatedAt": "2026-06-30T15:30:30Z"
 }
