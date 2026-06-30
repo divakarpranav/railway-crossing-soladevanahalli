@@ -11,6 +11,14 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "16021",
+        "trainName": "Kaveri Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "02:45",
+        "expectedDepartureTime": "02:45",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "06545",
         "trainName": "Vijayapura Special Fare Special",
         "status": "scheduled",
@@ -19,12 +27,12 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T17:10:18Z"
+    "fetchedAt": "2026-06-30T17:20:18Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-06-30T17:10:18Z"
+    "fetchedAt": "2026-06-30T17:20:18Z"
   },
-  "generatedAt": "2026-06-30T17:10:18Z"
+  "generatedAt": "2026-06-30T17:20:18Z"
 }
