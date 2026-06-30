@@ -3,14 +3,6 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "16022",
-        "trainName": "Kaveri Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "00:15",
-        "expectedDepartureTime": "00:15",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "16021",
         "trainName": "Kaveri Express",
         "status": "scheduled",
@@ -33,14 +25,22 @@
         "scheduledDepartureTime": "04:22",
         "expectedDepartureTime": "04:22",
         "delayMinutes": 0
+      },
+      {
+        "trainNo": "11006",
+        "trainName": "Dadar PDY-DR CHALUKYA EXP",
+        "status": "scheduled",
+        "scheduledDepartureTime": "04:36",
+        "expectedDepartureTime": "04:36",
+        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T19:00:18Z"
+    "fetchedAt": "2026-06-30T19:10:17Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-06-30T19:00:18Z"
+    "fetchedAt": "2026-06-30T19:10:17Z"
   },
-  "generatedAt": "2026-06-30T19:00:18Z"
+  "generatedAt": "2026-06-30T19:10:17Z"
 }
