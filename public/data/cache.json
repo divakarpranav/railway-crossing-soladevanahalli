@@ -3,38 +3,6 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "22617",
-        "trainName": "SMVT Bengaluru Intercity SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "20:10",
-        "expectedDepartureTime": "20:10",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "16224",
-        "trainName": "Radhikapur - SMVT Bengaluru Passenger",
-        "status": "scheduled",
-        "scheduledDepartureTime": "19:50",
-        "expectedDepartureTime": "19:50",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "16526",
-        "trainName": "Kanniyakumari Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "20:36",
-        "expectedDepartureTime": "20:36",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "12607",
-        "trainName": "Lalbagh SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "20:45",
-        "expectedDepartureTime": "20:45",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "16219",
         "trainName": "Tirupati Express",
         "status": "scheduled",
@@ -48,6 +16,14 @@
         "status": "scheduled",
         "scheduledDepartureTime": "20:50",
         "expectedDepartureTime": "20:50",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "66520",
+        "trainName": "KSR Bengaluru - Marikuppam MEMU",
+        "status": "scheduled",
+        "scheduledDepartureTime": "21:15",
+        "expectedDepartureTime": "21:15",
         "delayMinutes": 0
       },
       {
@@ -83,14 +59,6 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "66520",
-        "trainName": "KSR Bengaluru - Marikuppam MEMU",
-        "status": "scheduled",
-        "scheduledDepartureTime": "21:15",
-        "expectedDepartureTime": "21:15",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "66537",
         "trainName": "Bangarapet Junction - SMVT Bengaluru Passenger",
         "status": "scheduled",
@@ -115,12 +83,12 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-06-30T15:01:34Z"
+    "fetchedAt": "2026-06-30T15:24:48Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-06-30T15:01:34Z"
+    "fetchedAt": "2026-06-30T15:24:48Z"
   },
-  "generatedAt": "2026-06-30T15:01:34Z"
+  "generatedAt": "2026-06-30T15:24:48Z"
 }
