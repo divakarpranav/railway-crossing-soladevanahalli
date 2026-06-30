@@ -2,17 +2,16 @@ name: Refresh crossing data
 
 on:
   schedule:
-    # Every 10 minutes — uses ~288 calls/day for the two station boards
-    - cron: '*/10 * * * *'
-  workflow_dispatch:    # allow manual trigger from GitHub UI
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
 
 permissions:
-  contents: write       # needed to commit cache.json back to the repo
+  contents: write
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 4
 
     steps:
       - name: Checkout
@@ -20,132 +19,83 @@ jobs:
         with:
           ref: master
 
-      - name: Fetch live boards and write cache
+      - name: Validate secrets
         env:
           RAILRADAR_BASE: ${{ secrets.RAILRADAR_BASE }}
           RAILRADAR_KEY:  ${{ secrets.RAILRADAR_KEY }}
         run: |
-          set -euo pipefail
-          export NOW=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          if [ -z "$RAILRADAR_BASE" ]; then
+            echo "::error::RAILRADAR_BASE secret is empty or missing."
+            exit 1
+          fi
+          if [ -z "$RAILRADAR_KEY" ]; then
+            echo "::error::RAILRADAR_KEY secret is empty or missing."
+            exit 1
+          fi
+          echo "RAILRADAR_BASE = $RAILRADAR_BASE"
+          echo "RAILRADAR_KEY length = ${#RAILRADAR_KEY} chars"
+          case "$RAILRADAR_BASE" in
+            *\"*) echo "::error::RAILRADAR_BASE contains a literal quote — remove quotes from the secret value."; exit 1 ;;
+          esac
 
-          # ── Helper: fetch with retries ──────────────────────────────────────
-          fetch_json() {
-            local url="$1"
-            local retries=3
-            for i in $(seq 1 $retries); do
-              HTTP=$(curl -s -o /tmp/body.json -w "%{http_code}" \
-                -H "x-api-key: ${RAILRADAR_KEY}" \
-                -H "Accept: application/json" \
-                --max-time 15 \
-                "$url")
-              if [ "$HTTP" = "200" ]; then
-                cat /tmp/body.json
-                return 0
-              fi
-              echo "Attempt $i failed (HTTP $HTTP) for $url" >&2
-              sleep 3
-            done
-            echo "null"
+      - name: Fetch live boards
+        env:
+          RAILRADAR_BASE: ${{ secrets.RAILRADAR_BASE }}
+          RAILRADAR_KEY:  ${{ secrets.RAILRADAR_KEY }}
+        run: |
+          set -uo pipefail
+          NOW=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          echo "NOW=$NOW" >> "$GITHUB_ENV"
+          echo "=== Refresh at $NOW ==="
+
+          fetch_station() {
+            local code="$1"
+            local outfile="$2"
+            local url="${RAILRADAR_BASE}/v1/stations/${code}/live"
+            echo "--- Fetching $code from: $url ---"
+            curl -sS \
+              -o "$outfile" \
+              -w "HTTP_CODE:%{http_code} TIME:%{time_total}s\n" \
+              -H "x-api-key: ${RAILRADAR_KEY}" \
+              -H "Accept: application/json" \
+              --connect-timeout 10 \
+              --max-time 25 \
+              --retry 2 \
+              --retry-delay 2 \
+              "$url"
+            local exit_code=$?
+            if [ $exit_code -ne 0 ]; then
+              echo "::error::curl failed for $code — exit code $exit_code (28=timeout, 6=DNS fail, 7=connect fail, 35=SSL error, 22=HTTP error)"
+              echo "{}" > "$outfile"
+              return 1
+            fi
+            return 0
           }
 
-          # ── Fetch both station live boards ──────────────────────────────────
-          export KJM_DATA=$(fetch_json "${RAILRADAR_BASE}/v1/stations/KJM/live")
-          export BLRR_DATA=$(fetch_json "${RAILRADAR_BASE}/v1/stations/BLRR/live")
+          KJM_OK=1
+          BLRR_OK=1
+          fetch_station "KJM"  /tmp/kjm_raw.json  || KJM_OK=0
+          fetch_station "BLRR" /tmp/blrr_raw.json || BLRR_OK=0
 
-          # ── Validate responses ──────────────────────────────────────────────
-          if [ "$KJM_DATA" = "null" ] || [ "$BLRR_DATA" = "null" ]; then
-            echo "One or both API calls failed. Aborting to preserve last good cache."
-            exit 0
+          if [ $KJM_OK -eq 0 ] && [ $BLRR_OK -eq 0 ]; then
+            echo "::error::Both station fetches failed. Aborting — keeping last good cache.json untouched."
+            exit 1
           fi
 
-          # ── Build merged cache JSON ─────────────────────────────────────────
+      - name: Parse and write cache.json
+        run: |
           mkdir -p public/data
+          python3 scripts/parse_cache.py "$NOW" /tmp/kjm_raw.json /tmp/blrr_raw.json public/data/cache.json
 
-          python3 - << 'PYEOF'
-          import json, sys, os
-
-          kjm_data_str = os.environ.get("KJM_DATA", "null")
-          blrr_data_str = os.environ.get("BLRR_DATA", "null")
-
-          print(f"Raw KJM_DATA: {kjm_data_str[:200]}")
-          print(f"Raw BLRR_DATA: {blrr_data_str[:200]}")
-
-          try:
-              kjm_raw = json.loads(kjm_data_str)
-          except Exception as e:
-              print(f"Error parsing KJM_DATA as JSON: {e}")
-              kjm_raw = None
-
-          try:
-              blrr_raw = json.loads(blrr_data_str)
-          except Exception as e:
-              print(f"Error parsing BLRR_DATA as JSON: {e}")
-              blrr_raw = None
-
-          def normalise(raw, code):
-              """Normalise RailRadar live board response to our schema."""
-              if not raw:
-                  return {"stationCode": code, "trains": [], "fetchedAt": os.environ.get("NOW", "")}
-              
-              # Handle double-serialized JSON string
-              if isinstance(raw, str):
-                  try:
-                      raw = json.loads(raw)
-                  except Exception:
-                      print(f"Warning: expected JSON object for {code}, but got string: {raw}")
-                      return {"stationCode": code, "trains": [], "fetchedAt": os.environ.get("NOW", "")}
-
-              trains = []
-              
-              if isinstance(raw, list):
-                  entries = raw
-              elif isinstance(raw, dict):
-                  data_field = raw.get("data")
-                  if isinstance(data_field, dict):
-                      entries = data_field.get("trains") or data_field.get("data") or []
-                  else:
-                      entries = raw.get("trains") or raw.get("data") or []
-                  
-                  if isinstance(entries, dict):
-                      entries = entries.get("trains") or []
-              else:
-                  print(f"Warning: unexpected type for {code}: {type(raw)}")
-                  entries = []
-
-              for t in entries:
-                  if not isinstance(t, dict):
-                      continue
-                  trains.append({
-                      "trainNo":                t.get("trainNo") or t.get("train_number", ""),
-                      "trainName":              t.get("trainName") or t.get("train_name", ""),
-                      "status":                 t.get("status", "scheduled"),
-                      "scheduledDepartureTime": t.get("scheduledDepartureTime") or t.get("sched_dep", ""),
-                      "expectedDepartureTime":  t.get("expectedDepartureTime") or t.get("exp_dep", ""),
-                      "delayMinutes":           int(t.get("delayMinutes") or t.get("delay", 0) or 0),
-                  })
-              return {"stationCode": code, "trains": trains, "fetchedAt": os.environ.get("NOW", "")}
-
-          cache = {
-              "kjm":         normalise(kjm_raw,  "KJM"),
-              "blrr":        normalise(blrr_raw, "BLRR"),
-              "generatedAt": os.environ.get("NOW", ""),
-          }
-
-          with open("public/data/cache.json", "w") as f:
-              json.dump(cache, f, indent=2)
-
-          print(f"Wrote cache: KJM={len(cache['kjm']['trains'])} trains, BLRR={len(cache['blrr']['trains'])} trains")
-          PYEOF
-
-      - name: Commit updated cache
+      - name: Commit cache.json
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/data/cache.json
-          # Only commit if there are actual changes
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "No changes — data identical to last commit."
           else
-            git commit -m "chore: refresh crossing data"
-            git push
+            git commit -m "chore: refresh crossing data [skip ci]"
+            git push origin master
+            echo "✓ Pushed updated cache.json"
           fi

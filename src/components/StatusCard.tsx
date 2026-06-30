@@ -83,12 +83,12 @@ export function StatusCard({ prediction }: Props) {
         />
       </div>
 
-      {/* Data age warning */}
-      {dataAgeSeconds > 300 && (
+      {/* Data age warning — only show if data is >15 min old (refresh runs every 10 min) */}
+      {dataAgeSeconds > 600 && (
         <div className="mt-3 text-[10px] text-[#F5A623] flex flex-col gap-1.5">
           <div className="flex items-center gap-1.5">
             <span>⚠</span>
-            <span>Data {Math.floor(dataAgeSeconds / 60)} min old — may be less accurate</span>
+            <span>Data {Math.floor(dataAgeSeconds / 60)} min old — refresh action may have failed</span>
           </div>
           <div className="text-[#5E7090] pl-3.5">
             Last updated: {prediction.lastUpdated.toLocaleString('en-IN', {

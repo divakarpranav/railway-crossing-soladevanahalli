@@ -165,7 +165,11 @@ function buildGateWindows(
 
 // ─── Confidence score ─────────────────────────────────────────────────────────
 function calcConfidence(dataAgeSeconds: number, baseConfidence = 95): number {
-  const decay = Math.floor(dataAgeSeconds / 60) * PREDICTION_CONFIG.confidenceDecayPerMinute
+  // No decay during the normal 10-min refresh window
+  const decayStartSeconds = (PREDICTION_CONFIG.confidenceDecayStartMinutes ?? 10) * 60
+  if (dataAgeSeconds <= decayStartSeconds) return baseConfidence
+  const extraMinutes = Math.floor((dataAgeSeconds - decayStartSeconds) / 60)
+  const decay = extraMinutes * PREDICTION_CONFIG.confidenceDecayPerMinute
   return Math.max(PREDICTION_CONFIG.minConfidence, baseConfidence - decay)
 }
 

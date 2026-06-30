@@ -2,21 +2,22 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [master]
+    branches:
+      - master
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages:    write
+  pages: write
   id-token: write
 
-# Only one deployment at a time
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
   build:
+    if: github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip ci]')
     runs-on: ubuntu-latest
 
     steps:
@@ -36,13 +37,15 @@ jobs:
         run: npm run build
         env:
           VITE_RAILRADAR_BASE: ${{ secrets.RAILRADAR_BASE }}
-          VITE_RAILRADAR_KEY:  ${{ secrets.RAILRADAR_KEY }}
+          VITE_RAILRADAR_KEY: ${{ secrets.RAILRADAR_KEY }}
 
-      # Ensure data dir exists even on first deploy before any data refresh
-      - name: Seed empty cache if missing
+      - name: Ensure cache exists
         run: |
           mkdir -p dist/data
-          if [ ! -f dist/data/cache.json ]; then
+
+          if [ -f public/data/cache.json ]; then
+            cp public/data/cache.json dist/data/cache.json
+          else
             echo '{"kjm":{"stationCode":"KJM","trains":[],"fetchedAt":""},"blrr":{"stationCode":"BLRR","trains":[],"fetchedAt":""},"generatedAt":""}' \
               > dist/data/cache.json
           fi
@@ -55,6 +58,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
