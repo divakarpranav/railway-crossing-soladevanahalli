@@ -3,6 +3,14 @@
     "stationCode": "KJM",
     "trains": [
       {
+        "trainNo": "16598",
+        "trainName": "SMVT Bengaluru Amrit Bharat Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "01:52",
+        "expectedDepartureTime": "01:52",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "15227",
         "trainName": "Muzaffarpur Express",
         "status": "scheduled",
@@ -51,14 +59,6 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "12835",
-        "trainName": "SMVT Bengaluru SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "02:27",
-        "expectedDepartureTime": "02:27",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "12683",
         "trainName": "SMVT Bengaluru SF Express",
         "status": "scheduled",
@@ -67,20 +67,28 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "16598",
-        "trainName": "SMVT Bengaluru Amrit Bharat Express",
+        "trainNo": "16220",
+        "trainName": "Chamarajanagar Express",
         "status": "scheduled",
-        "scheduledDepartureTime": "01:52",
-        "expectedDepartureTime": "01:52",
+        "scheduledDepartureTime": "03:20",
+        "expectedDepartureTime": "03:20",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "12835",
+        "trainName": "SMVT Bengaluru SF Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "02:27",
+        "expectedDepartureTime": "02:27",
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T17:40:18Z"
+    "fetchedAt": "2026-07-01T17:50:21Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-07-01T17:40:18Z"
+    "fetchedAt": "2026-07-01T17:50:21Z"
   },
-  "generatedAt": "2026-07-01T17:40:18Z"
+  "generatedAt": "2026-07-01T17:50:21Z"
 }
