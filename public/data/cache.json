@@ -3,22 +3,6 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "12639",
-        "trainName": "Brindavan Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "12:50",
-        "expectedDepartureTime": "12:50",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "66511",
-        "trainName": "KSR Bengaluru - Marikuppam MEMU",
-        "status": "scheduled",
-        "scheduledDepartureTime": "12:50",
-        "expectedDepartureTime": "12:50",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "20672",
         "trainName": "Madurai Vande Bharat Express",
         "status": "scheduled",
@@ -91,6 +75,14 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "66514",
+        "trainName": "Krishnarajapuram MEMU",
+        "status": "scheduled",
+        "scheduledDepartureTime": "",
+        "expectedDepartureTime": "",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "22665",
         "trainName": "Coimbatore Uday Express",
         "status": "scheduled",
@@ -105,9 +97,25 @@
         "scheduledDepartureTime": "16:12",
         "expectedDepartureTime": "16:12",
         "delayMinutes": 0
+      },
+      {
+        "trainNo": "06549",
+        "trainName": "Bengaluru Cantt. (Bangalore) - Kannur (Cannanore) Passenger",
+        "status": "scheduled",
+        "scheduledDepartureTime": "16:55",
+        "expectedDepartureTime": "16:55",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "16315",
+        "trainName": "Thiruvananthapuram North Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "17:00",
+        "expectedDepartureTime": "17:00",
+        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T07:20:17Z"
+    "fetchedAt": "2026-07-01T07:30:18Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -137,7 +145,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T07:20:17Z"
+    "fetchedAt": "2026-07-01T07:30:18Z"
   },
-  "generatedAt": "2026-07-01T07:20:17Z"
+  "generatedAt": "2026-07-01T07:30:18Z"
 }
