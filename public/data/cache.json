@@ -19,14 +19,6 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "66549",
-        "trainName": "Jolarpettai - KSR Bengaluru MEMU",
-        "status": "scheduled",
-        "scheduledDepartureTime": "17:35",
-        "expectedDepartureTime": "17:35",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "66556",
         "trainName": "KSR Bengaluru - Marikuppam MEMU",
         "status": "scheduled",
@@ -48,6 +40,14 @@
         "status": "scheduled",
         "scheduledDepartureTime": "19:06",
         "expectedDepartureTime": "19:06",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "07097",
+        "trainName": "Hyderabad Deccan Nampally - Mangaluru Central (Mangalore) Passenger",
+        "status": "scheduled",
+        "scheduledDepartureTime": "19:02",
+        "expectedDepartureTime": "19:02",
         "delayMinutes": 0
       },
       {
@@ -115,14 +115,6 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "07097",
-        "trainName": "Hyderabad Deccan Nampally - Mangaluru Central (Mangalore) Passenger",
-        "status": "scheduled",
-        "scheduledDepartureTime": "19:02",
-        "expectedDepartureTime": "19:02",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "16526",
         "trainName": "Kanniyakumari Express",
         "status": "scheduled",
@@ -131,7 +123,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T12:30:17Z"
+    "fetchedAt": "2026-07-01T12:40:19Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -161,7 +153,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T12:30:17Z"
+    "fetchedAt": "2026-07-01T12:40:19Z"
   },
-  "generatedAt": "2026-07-01T12:30:17Z"
+  "generatedAt": "2026-07-01T12:40:19Z"
 }
