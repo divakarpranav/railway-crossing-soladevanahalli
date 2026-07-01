@@ -83,6 +83,22 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "66549",
+        "trainName": "Jolarpettai - KSR Bengaluru MEMU",
+        "status": "scheduled",
+        "scheduledDepartureTime": "17:35",
+        "expectedDepartureTime": "17:35",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "66515",
+        "trainName": "Marikuppam MEMU",
+        "status": "scheduled",
+        "scheduledDepartureTime": "17:35",
+        "expectedDepartureTime": "17:35",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "22665",
         "trainName": "Coimbatore Uday Express",
         "status": "scheduled",
@@ -113,9 +129,17 @@
         "scheduledDepartureTime": "17:00",
         "expectedDepartureTime": "17:00",
         "delayMinutes": 0
+      },
+      {
+        "trainNo": "12639",
+        "trainName": "Brindavan Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "12:50",
+        "expectedDepartureTime": "12:50",
+        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T08:00:17Z"
+    "fetchedAt": "2026-07-01T08:10:17Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -145,7 +169,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T08:00:17Z"
+    "fetchedAt": "2026-07-01T08:10:17Z"
   },
-  "generatedAt": "2026-07-01T08:00:17Z"
+  "generatedAt": "2026-07-01T08:10:17Z"
 }
