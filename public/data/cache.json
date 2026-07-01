@@ -19,6 +19,14 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "66520",
+        "trainName": "KSR Bengaluru - Marikuppam MEMU",
+        "status": "scheduled",
+        "scheduledDepartureTime": "21:15",
+        "expectedDepartureTime": "21:15",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "12509",
         "trainName": "Guwahati SF Express",
         "status": "scheduled",
@@ -81,22 +89,14 @@
         "scheduledDepartureTime": "20:45",
         "expectedDepartureTime": "20:45",
         "delayMinutes": 0
-      },
-      {
-        "trainNo": "20664",
-        "trainName": "Mysuru Vande Bharat Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "20:50",
-        "expectedDepartureTime": "20:50",
-        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T15:50:19Z"
+    "fetchedAt": "2026-07-01T16:00:18Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-07-01T15:50:19Z"
+    "fetchedAt": "2026-07-01T16:00:18Z"
   },
-  "generatedAt": "2026-07-01T15:50:19Z"
+  "generatedAt": "2026-07-01T16:00:18Z"
 }
