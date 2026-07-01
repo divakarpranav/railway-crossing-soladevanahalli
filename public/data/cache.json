@@ -99,19 +99,19 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "07097",
-        "trainName": "Hyderabad Deccan Nampally - Mangaluru Central (Mangalore) Passenger",
-        "status": "scheduled",
-        "scheduledDepartureTime": "19:02",
-        "expectedDepartureTime": "19:02",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "16521",
         "trainName": "KSR Bengaluru MEMU Express",
         "status": "scheduled",
         "scheduledDepartureTime": "22:19",
         "expectedDepartureTime": "22:19",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "07097",
+        "trainName": "Hyderabad Deccan Nampally - Mangaluru Central (Mangalore) Passenger",
+        "status": "scheduled",
+        "scheduledDepartureTime": "19:02",
+        "expectedDepartureTime": "19:02",
         "delayMinutes": 0
       },
       {
@@ -121,17 +121,9 @@
         "scheduledDepartureTime": "20:36",
         "expectedDepartureTime": "20:36",
         "delayMinutes": 0
-      },
-      {
-        "trainNo": "16520",
-        "trainName": "Jolarpettai MEMU Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "17:55",
-        "expectedDepartureTime": "17:55",
-        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T12:50:17Z"
+    "fetchedAt": "2026-07-01T13:00:19Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -161,7 +153,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T12:50:17Z"
+    "fetchedAt": "2026-07-01T13:00:19Z"
   },
-  "generatedAt": "2026-07-01T12:50:17Z"
+  "generatedAt": "2026-07-01T13:00:19Z"
 }
