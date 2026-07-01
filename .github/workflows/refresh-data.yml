@@ -67,9 +67,9 @@ jobs:
             # RAILRADAR_BASE already contains everything up to (and including)
             # the version prefix. We just append /stations/{code}/live.
             # Examples:
-            #   https://api.railradar.in/v1       → /stations/KJM/live
-            #   https://api.railradar.in           → /stations/KJM/live
-            #   https://api.railradar.in/v1/       → /stations/KJM/live  (trailing slash stripped above)
+            #   https://api.railradar.in/v1       → /stations/GHL/live
+            #   https://api.railradar.in           → /stations/GHL/live
+            #   https://api.railradar.in/v1/       → /stations/GHL/live  (trailing slash stripped above)
             local url="${RAILRADAR_BASE}/stations/${code}/live"
             echo "--- Fetching $code ---"
             echo "    URL: $url"
@@ -127,12 +127,12 @@ jobs:
             return 0
           }
 
-          KJM_OK=1
-          BLRR_OK=1
-          fetch_station "KJM"  /tmp/kjm_raw.json  || KJM_OK=0
-          fetch_station "BLRR" /tmp/blrr_raw.json || BLRR_OK=0
+          GHL_OK=1
+          BAW_OK=1
+          fetch_station "GHL"  /tmp/GHL_raw.json  || GHL_OK=0
+          fetch_station "" /tmp/_raw.json || _OK=0
 
-          if [ $KJM_OK -eq 0 ] && [ $BLRR_OK -eq 0 ]; then
+          if [ $GHL_OK -eq 0 ] && [ $BAW_OK -eq 0 ]; then
             echo "::error::Both station fetches failed. Keeping last good cache.json untouched."
             exit 1
           fi
@@ -140,7 +140,7 @@ jobs:
       - name: Parse and write cache.json
         run: |
           mkdir -p public/data
-          python3 scripts/parse_cache.py "$NOW" /tmp/kjm_raw.json /tmp/blrr_raw.json public/data/cache.json
+          python3 scripts/parse_cache.py "$NOW" /tmp/GHL_raw.json /tmp/BAW_raw.json public/data/cache.json
 
       - name: Commit cache.json
         run: |
