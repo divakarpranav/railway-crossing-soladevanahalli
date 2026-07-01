@@ -3,30 +3,6 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "16551",
-        "trainName": "Ashokapuram SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "19:06",
-        "expectedDepartureTime": "19:06",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "06547",
-        "trainName": "Thiruvananthapuram North Special Fare AC Special",
-        "status": "scheduled",
-        "scheduledDepartureTime": "19:37",
-        "expectedDepartureTime": "19:37",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "16522",
-        "trainName": "Bangarapet MEMU Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "20:07",
-        "expectedDepartureTime": "20:07",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "16219",
         "trainName": "Tirupati Express",
         "status": "scheduled",
@@ -59,6 +35,14 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "16522",
+        "trainName": "Bangarapet MEMU Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "20:07",
+        "expectedDepartureTime": "20:07",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "16526",
         "trainName": "Kanniyakumari Express",
         "status": "scheduled",
@@ -72,14 +56,6 @@
         "status": "scheduled",
         "scheduledDepartureTime": "21:15",
         "expectedDepartureTime": "21:15",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "07097",
-        "trainName": "Hyderabad Deccan Nampally - Mangaluru Central (Mangalore) Passenger",
-        "status": "scheduled",
-        "scheduledDepartureTime": "19:02",
-        "expectedDepartureTime": "19:02",
         "delayMinutes": 0
       },
       {
@@ -97,14 +73,30 @@
         "scheduledDepartureTime": "23:25",
         "expectedDepartureTime": "23:25",
         "delayMinutes": 0
+      },
+      {
+        "trainNo": "12509",
+        "trainName": "Guwahati SF Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "23:55",
+        "expectedDepartureTime": "23:55",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "16551",
+        "trainName": "Ashokapuram SF Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "19:06",
+        "expectedDepartureTime": "19:06",
+        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T14:20:17Z"
+    "fetchedAt": "2026-07-01T14:30:17Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-07-01T14:20:17Z"
+    "fetchedAt": "2026-07-01T14:30:17Z"
   },
-  "generatedAt": "2026-07-01T14:20:17Z"
+  "generatedAt": "2026-07-01T14:30:17Z"
 }
