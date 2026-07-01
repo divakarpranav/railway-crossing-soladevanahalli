@@ -39,8 +39,8 @@ export const PREDICTION_CONFIG = {
 // Hardcoded (not env-var-based) so this works immediately regardless of
 // whether build-time secrets/vars are configured correctly.
 
-const GH_USER   = 'BxtGeek'
-const GH_REPO   = 'railway-crossing-data'
+const GH_USER   = 'divakarpranav'
+const GH_REPO   = 'railway-crossing-soladevanahalli'
 const GH_BRANCH = 'master'
 
 export const CACHE_JSON_URL =
