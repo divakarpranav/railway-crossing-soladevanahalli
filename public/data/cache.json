@@ -3,14 +3,6 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "66546",
-        "trainName": "KSR Bengaluru - Marikuppam MEMU",
-        "status": "scheduled",
-        "scheduledDepartureTime": "07:25",
-        "expectedDepartureTime": "07:25",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "04132",
         "trainName": "SMVT Bengaluru - Kanpur Central Passenger",
         "status": "scheduled",
@@ -24,6 +16,14 @@
         "status": "scheduled",
         "scheduledDepartureTime": "07:12",
         "expectedDepartureTime": "07:12",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "66546",
+        "trainName": "KSR Bengaluru - Marikuppam MEMU",
+        "status": "scheduled",
+        "scheduledDepartureTime": "07:25",
+        "expectedDepartureTime": "07:25",
         "delayMinutes": 0
       },
       {
@@ -43,19 +43,19 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "66529",
-        "trainName": "Kuppam - KSR Bengaluru MEMU",
-        "status": "scheduled",
-        "scheduledDepartureTime": "08:29",
-        "expectedDepartureTime": "08:29",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "16552",
         "trainName": "MGR Chennai Central SF Express",
         "status": "scheduled",
         "scheduledDepartureTime": "08:20",
         "expectedDepartureTime": "08:20",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "66529",
+        "trainName": "Kuppam - KSR Bengaluru MEMU",
+        "status": "scheduled",
+        "scheduledDepartureTime": "08:29",
+        "expectedDepartureTime": "08:29",
         "delayMinutes": 0
       },
       {
@@ -139,14 +139,6 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "17316",
-        "trainName": "Vasco-Da-Gama Weekly Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "10:50",
-        "expectedDepartureTime": "10:50",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "66548",
         "trainName": "Krishnarajapuram MEMU",
         "status": "scheduled",
@@ -155,16 +147,24 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "66547",
-        "trainName": "Marikuppam MEMU",
+        "trainNo": "17316",
+        "trainName": "Vasco-Da-Gama Weekly Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "10:50",
+        "expectedDepartureTime": "10:50",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "17210",
+        "trainName": "Seshadri Express",
         "status": "scheduled",
         "scheduledDepartureTime": "11:10",
         "expectedDepartureTime": "11:10",
         "delayMinutes": 0
       },
       {
-        "trainNo": "17210",
-        "trainName": "Seshadri Express",
+        "trainNo": "66547",
+        "trainName": "Marikuppam MEMU",
         "status": "scheduled",
         "scheduledDepartureTime": "11:10",
         "expectedDepartureTime": "11:10",
@@ -193,35 +193,27 @@
         "scheduledDepartureTime": "09:29",
         "expectedDepartureTime": "09:29",
         "delayMinutes": 0
-      },
-      {
-        "trainNo": "12608",
-        "trainName": "Lalbagh SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "06:51",
-        "expectedDepartureTime": "06:51",
-        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T01:40:16Z"
+    "fetchedAt": "2026-07-01T01:50:17Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [
-      {
-        "trainNo": "66584",
-        "trainName": "Dharmapuri - KSR Bengaluru MEMU",
-        "status": "scheduled",
-        "scheduledDepartureTime": "07:07",
-        "expectedDepartureTime": "07:07",
-        "delayMinutes": 0
-      },
       {
         "trainNo": "66595",
         "trainName": "Yesvantpur Junction - Hosur Passenger",
         "status": "scheduled",
         "scheduledDepartureTime": "06:50",
         "expectedDepartureTime": "06:50",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "66584",
+        "trainName": "Dharmapuri - KSR Bengaluru MEMU",
+        "status": "scheduled",
+        "scheduledDepartureTime": "07:07",
+        "expectedDepartureTime": "07:07",
         "delayMinutes": 0
       },
       {
@@ -249,7 +241,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T01:40:16Z"
+    "fetchedAt": "2026-07-01T01:50:17Z"
   },
-  "generatedAt": "2026-07-01T01:40:16Z"
+  "generatedAt": "2026-07-01T01:50:17Z"
 }
