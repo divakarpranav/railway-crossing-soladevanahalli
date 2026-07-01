@@ -3,14 +3,6 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "66529",
-        "trainName": "Kuppam - KSR Bengaluru MEMU",
-        "status": "scheduled",
-        "scheduledDepartureTime": "08:29",
-        "expectedDepartureTime": "08:29",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "16552",
         "trainName": "MGR Chennai Central SF Express",
         "status": "scheduled",
@@ -147,19 +139,19 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "12510",
-        "trainName": "SMVT Bengaluru SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "09:04",
-        "expectedDepartureTime": "09:04",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "66544",
         "trainName": "Banaswadi - Kuppam MEMU",
         "status": "scheduled",
         "scheduledDepartureTime": "11:51",
         "expectedDepartureTime": "11:51",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "12510",
+        "trainName": "SMVT Bengaluru SF Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "09:04",
+        "expectedDepartureTime": "09:04",
         "delayMinutes": 0
       },
       {
@@ -203,7 +195,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T03:00:16Z"
+    "fetchedAt": "2026-07-01T03:10:16Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -233,7 +225,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T03:00:16Z"
+    "fetchedAt": "2026-07-01T03:10:16Z"
   },
-  "generatedAt": "2026-07-01T03:00:16Z"
+  "generatedAt": "2026-07-01T03:10:16Z"
 }
