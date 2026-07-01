@@ -11,14 +11,6 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "22666",
-        "trainName": "KSR Bengaluru Uday Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "11:45",
-        "expectedDepartureTime": "11:45",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "66544",
         "trainName": "Banaswadi - Kuppam MEMU",
         "status": "scheduled",
@@ -139,7 +131,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T06:10:19Z"
+    "fetchedAt": "2026-07-01T06:20:17Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -151,9 +143,17 @@
         "scheduledDepartureTime": "11:26",
         "expectedDepartureTime": "11:26",
         "delayMinutes": 0
+      },
+      {
+        "trainNo": "66585",
+        "trainName": "Yesvantpur- Hosur MEMU",
+        "status": "scheduled",
+        "scheduledDepartureTime": "15:43",
+        "expectedDepartureTime": "15:43",
+        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T06:10:19Z"
+    "fetchedAt": "2026-07-01T06:20:17Z"
   },
-  "generatedAt": "2026-07-01T06:10:19Z"
+  "generatedAt": "2026-07-01T06:20:17Z"
 }
