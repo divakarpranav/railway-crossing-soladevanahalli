@@ -11,14 +11,6 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "22681",
-        "trainName": "MGR Chennai Central Weekly SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "23:25",
-        "expectedDepartureTime": "23:25",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "12509",
         "trainName": "Guwahati SF Express",
         "status": "scheduled",
@@ -81,14 +73,22 @@
         "scheduledDepartureTime": "01:52",
         "expectedDepartureTime": "01:52",
         "delayMinutes": 0
+      },
+      {
+        "trainNo": "22681",
+        "trainName": "MGR Chennai Central Weekly SF Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "23:25",
+        "expectedDepartureTime": "23:25",
+        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T18:00:18Z"
+    "fetchedAt": "2026-07-01T18:10:18Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-07-01T18:00:18Z"
+    "fetchedAt": "2026-07-01T18:10:18Z"
   },
-  "generatedAt": "2026-07-01T18:00:18Z"
+  "generatedAt": "2026-07-01T18:10:18Z"
 }
