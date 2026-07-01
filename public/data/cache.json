@@ -3,14 +3,6 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "66547",
-        "trainName": "Marikuppam MEMU",
-        "status": "scheduled",
-        "scheduledDepartureTime": "11:10",
-        "expectedDepartureTime": "11:10",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "17316",
         "trainName": "Vasco-Da-Gama Weekly Express",
         "status": "scheduled",
@@ -123,6 +115,14 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "66545",
+        "trainName": "Marikuppam - KSR Bengaluru MEMU",
+        "status": "scheduled",
+        "scheduledDepartureTime": "15:15",
+        "expectedDepartureTime": "15:15",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "12296",
         "trainName": "Sanghamitra SF Express",
         "status": "scheduled",
@@ -155,7 +155,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T05:40:18Z"
+    "fetchedAt": "2026-07-01T05:50:17Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -169,7 +169,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T05:40:18Z"
+    "fetchedAt": "2026-07-01T05:50:17Z"
   },
-  "generatedAt": "2026-07-01T05:40:18Z"
+  "generatedAt": "2026-07-01T05:50:17Z"
 }
