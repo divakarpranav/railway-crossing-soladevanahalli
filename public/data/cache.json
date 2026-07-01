@@ -3,14 +3,6 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "20663",
-        "trainName": "MGR Chennai Central Vande Bharat Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "08:06",
-        "expectedDepartureTime": "08:06",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "66529",
         "trainName": "Kuppam - KSR Bengaluru MEMU",
         "status": "scheduled",
@@ -139,6 +131,14 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "04132",
+        "trainName": "SMVT Bengaluru - Kanpur Central Passenger",
+        "status": "scheduled",
+        "scheduledDepartureTime": "07:25",
+        "expectedDepartureTime": "07:25",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "22666",
         "trainName": "KSR Bengaluru Uday Express",
         "status": "scheduled",
@@ -171,6 +171,14 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "22625",
+        "trainName": "KSR Bengaluru Double Decker Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "12:15",
+        "expectedDepartureTime": "12:15",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "12295",
         "trainName": "Sanghamitra SF Express",
         "status": "scheduled",
@@ -185,21 +193,21 @@
         "scheduledDepartureTime": "11:44",
         "expectedDepartureTime": "11:44",
         "delayMinutes": 0
+      },
+      {
+        "trainNo": "20663",
+        "trainName": "MGR Chennai Central Vande Bharat Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "08:06",
+        "expectedDepartureTime": "08:06",
+        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T02:40:17Z"
+    "fetchedAt": "2026-07-01T02:50:17Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [
-      {
-        "trainNo": "16529",
-        "trainName": "Karaikal Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "07:49",
-        "expectedDepartureTime": "07:49",
-        "delayMinutes": 0
-      },
       {
         "trainNo": "66596",
         "trainName": "Hosur - Yesvantpur Junction Passenger",
@@ -223,9 +231,17 @@
         "scheduledDepartureTime": "11:26",
         "expectedDepartureTime": "11:26",
         "delayMinutes": 0
+      },
+      {
+        "trainNo": "16529",
+        "trainName": "Karaikal Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "07:49",
+        "expectedDepartureTime": "07:49",
+        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T02:40:17Z"
+    "fetchedAt": "2026-07-01T02:50:17Z"
   },
-  "generatedAt": "2026-07-01T02:40:17Z"
+  "generatedAt": "2026-07-01T02:50:17Z"
 }
