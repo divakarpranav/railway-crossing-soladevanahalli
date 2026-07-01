@@ -59,12 +59,12 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T19:30:17Z"
+    "fetchedAt": "2026-07-01T19:40:17Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-07-01T19:30:17Z"
+    "fetchedAt": "2026-07-01T19:40:17Z"
   },
-  "generatedAt": "2026-07-01T19:30:17Z"
+  "generatedAt": "2026-07-01T19:40:17Z"
 }
