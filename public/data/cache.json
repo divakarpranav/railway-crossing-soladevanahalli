@@ -67,16 +67,16 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "66547",
-        "trainName": "Marikuppam MEMU",
+        "trainNo": "17210",
+        "trainName": "Seshadri Express",
         "status": "scheduled",
         "scheduledDepartureTime": "11:10",
         "expectedDepartureTime": "11:10",
         "delayMinutes": 0
       },
       {
-        "trainNo": "17210",
-        "trainName": "Seshadri Express",
+        "trainNo": "66547",
+        "trainName": "Marikuppam MEMU",
         "status": "scheduled",
         "scheduledDepartureTime": "11:10",
         "expectedDepartureTime": "11:10",
@@ -153,21 +153,21 @@
         "scheduledDepartureTime": "11:44",
         "expectedDepartureTime": "11:44",
         "delayMinutes": 0
-      },
-      {
-        "trainNo": "66550",
-        "trainName": "KSR Bengaluru - Jolarpettai MEMU",
-        "status": "scheduled",
-        "scheduledDepartureTime": "09:10",
-        "expectedDepartureTime": "09:10",
-        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T04:00:16Z"
+    "fetchedAt": "2026-07-01T04:10:17Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [
+      {
+        "trainNo": "66596",
+        "trainName": "Hosur - Yesvantpur Junction Passenger",
+        "status": "scheduled",
+        "scheduledDepartureTime": "09:04",
+        "expectedDepartureTime": "09:04",
+        "delayMinutes": 0
+      },
       {
         "trainNo": "16212",
         "trainName": "Yesvantpur Express",
@@ -185,7 +185,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T04:00:16Z"
+    "fetchedAt": "2026-07-01T04:10:17Z"
   },
-  "generatedAt": "2026-07-01T04:00:16Z"
+  "generatedAt": "2026-07-01T04:10:17Z"
 }
