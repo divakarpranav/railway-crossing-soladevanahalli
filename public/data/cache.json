@@ -99,11 +99,11 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "22665",
-        "trainName": "Coimbatore Uday Express",
+        "trainNo": "66556",
+        "trainName": "KSR Bengaluru - Marikuppam MEMU",
         "status": "scheduled",
-        "scheduledDepartureTime": "14:35",
-        "expectedDepartureTime": "14:35",
+        "scheduledDepartureTime": "18:40",
+        "expectedDepartureTime": "18:40",
         "delayMinutes": 0
       },
       {
@@ -137,17 +137,9 @@
         "scheduledDepartureTime": "17:55",
         "expectedDepartureTime": "17:55",
         "delayMinutes": 0
-      },
-      {
-        "trainNo": "22626",
-        "trainName": "MGR Chennai Central Double Decker Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "13:54",
-        "expectedDepartureTime": "13:54",
-        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T09:00:19Z"
+    "fetchedAt": "2026-07-01T09:10:19Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -185,7 +177,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T09:00:19Z"
+    "fetchedAt": "2026-07-01T09:10:19Z"
   },
-  "generatedAt": "2026-07-01T09:00:19Z"
+  "generatedAt": "2026-07-01T09:10:19Z"
 }
