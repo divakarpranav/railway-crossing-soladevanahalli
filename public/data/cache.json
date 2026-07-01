@@ -27,19 +27,19 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "66588",
-        "trainName": "Kolar - Bengaluru Cantt. MEMU",
-        "status": "scheduled",
-        "scheduledDepartureTime": "08:55",
-        "expectedDepartureTime": "08:55",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "15228",
         "trainName": "SMVT Bengaluru Express",
         "status": "scheduled",
         "scheduledDepartureTime": "08:40",
         "expectedDepartureTime": "08:40",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "66588",
+        "trainName": "Kolar - Bengaluru Cantt. MEMU",
+        "status": "scheduled",
+        "scheduledDepartureTime": "08:55",
+        "expectedDepartureTime": "08:55",
         "delayMinutes": 0
       },
       {
@@ -139,6 +139,14 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "22666",
+        "trainName": "KSR Bengaluru Uday Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "11:45",
+        "expectedDepartureTime": "11:45",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "12510",
         "trainName": "SMVT Bengaluru SF Express",
         "status": "scheduled",
@@ -155,11 +163,11 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "22666",
-        "trainName": "KSR Bengaluru Uday Express",
+        "trainNo": "66581",
+        "trainName": "KSR Bengaluru - Bangarapet MEMU",
         "status": "scheduled",
-        "scheduledDepartureTime": "11:45",
-        "expectedDepartureTime": "11:45",
+        "scheduledDepartureTime": "12:10",
+        "expectedDepartureTime": "12:10",
         "delayMinutes": 0
       },
       {
@@ -179,7 +187,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T02:30:19Z"
+    "fetchedAt": "2026-07-01T02:40:17Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -217,7 +225,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T02:30:19Z"
+    "fetchedAt": "2026-07-01T02:40:17Z"
   },
-  "generatedAt": "2026-07-01T02:30:19Z"
+  "generatedAt": "2026-07-01T02:40:17Z"
 }
