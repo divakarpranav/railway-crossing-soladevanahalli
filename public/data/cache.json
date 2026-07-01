@@ -3,14 +3,6 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "15227",
-        "trainName": "Muzaffarpur Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "00:45",
-        "expectedDepartureTime": "00:45",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "22681",
         "trainName": "MGR Chennai Central Weekly SF Express",
         "status": "scheduled",
@@ -19,11 +11,11 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "66520",
-        "trainName": "KSR Bengaluru - Marikuppam MEMU",
+        "trainNo": "15227",
+        "trainName": "Muzaffarpur Express",
         "status": "scheduled",
-        "scheduledDepartureTime": "21:15",
-        "expectedDepartureTime": "21:15",
+        "scheduledDepartureTime": "00:45",
+        "expectedDepartureTime": "00:45",
         "delayMinutes": 0
       },
       {
@@ -73,30 +65,14 @@
         "scheduledDepartureTime": "20:36",
         "expectedDepartureTime": "20:36",
         "delayMinutes": 0
-      },
-      {
-        "trainNo": "06547",
-        "trainName": "Thiruvananthapuram North Special Fare AC Special",
-        "status": "scheduled",
-        "scheduledDepartureTime": "19:37",
-        "expectedDepartureTime": "19:37",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "12607",
-        "trainName": "Lalbagh SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "20:45",
-        "expectedDepartureTime": "20:45",
-        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T16:00:18Z"
+    "fetchedAt": "2026-07-01T16:10:18Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-07-01T16:00:18Z"
+    "fetchedAt": "2026-07-01T16:10:18Z"
   },
-  "generatedAt": "2026-07-01T16:00:18Z"
+  "generatedAt": "2026-07-01T16:10:18Z"
 }
