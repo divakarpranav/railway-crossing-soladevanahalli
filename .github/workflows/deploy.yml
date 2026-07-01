@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - master
-  schedule:
-    - cron: '*/5 * * * *'   # rebuild + redeploy every 5 min, in sync with data refresh
   workflow_dispatch:
 
 permissions:
