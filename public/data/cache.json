@@ -19,14 +19,6 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "16521",
-        "trainName": "KSR Bengaluru MEMU Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "22:19",
-        "expectedDepartureTime": "22:19",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "16021",
         "trainName": "Kaveri Express",
         "status": "scheduled",
@@ -35,19 +27,19 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "12835",
-        "trainName": "SMVT Bengaluru SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "02:27",
-        "expectedDepartureTime": "02:27",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "12683",
         "trainName": "SMVT Bengaluru SF Express",
         "status": "scheduled",
         "scheduledDepartureTime": "02:55",
         "expectedDepartureTime": "02:55",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "12835",
+        "trainName": "SMVT Bengaluru SF Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "02:27",
+        "expectedDepartureTime": "02:27",
         "delayMinutes": 0
       },
       {
@@ -65,22 +57,14 @@
         "scheduledDepartureTime": "01:52",
         "expectedDepartureTime": "01:52",
         "delayMinutes": 0
-      },
-      {
-        "trainNo": "12509",
-        "trainName": "Guwahati SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "23:55",
-        "expectedDepartureTime": "23:55",
-        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T18:40:17Z"
+    "fetchedAt": "2026-07-01T18:50:17Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-07-01T18:40:17Z"
+    "fetchedAt": "2026-07-01T18:50:17Z"
   },
-  "generatedAt": "2026-07-01T18:40:17Z"
+  "generatedAt": "2026-07-01T18:50:17Z"
 }
