@@ -3,22 +3,6 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "66555",
-        "trainName": "Marikuppam - KSR Bengaluru MEMU",
-        "status": "scheduled",
-        "scheduledDepartureTime": "07:51",
-        "expectedDepartureTime": "07:51",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "22618",
-        "trainName": "Tirupati Intercity SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "07:55",
-        "expectedDepartureTime": "07:55",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "20663",
         "trainName": "MGR Chennai Central Vande Bharat Express",
         "status": "scheduled",
@@ -131,14 +115,6 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "66547",
-        "trainName": "Marikuppam MEMU",
-        "status": "scheduled",
-        "scheduledDepartureTime": "11:10",
-        "expectedDepartureTime": "11:10",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "17316",
         "trainName": "Vasco-Da-Gama Weekly Express",
         "status": "scheduled",
@@ -147,19 +123,19 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "17210",
-        "trainName": "Seshadri Express",
+        "trainNo": "66547",
+        "trainName": "Marikuppam MEMU",
         "status": "scheduled",
         "scheduledDepartureTime": "11:10",
         "expectedDepartureTime": "11:10",
         "delayMinutes": 0
       },
       {
-        "trainNo": "22666",
-        "trainName": "KSR Bengaluru Uday Express",
+        "trainNo": "17210",
+        "trainName": "Seshadri Express",
         "status": "scheduled",
-        "scheduledDepartureTime": "11:45",
-        "expectedDepartureTime": "11:45",
+        "scheduledDepartureTime": "11:10",
+        "expectedDepartureTime": "11:10",
         "delayMinutes": 0
       },
       {
@@ -179,6 +155,14 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "22666",
+        "trainName": "KSR Bengaluru Uday Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "11:45",
+        "expectedDepartureTime": "11:45",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "12295",
         "trainName": "Sanghamitra SF Express",
         "status": "scheduled",
@@ -195,7 +179,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T02:20:16Z"
+    "fetchedAt": "2026-07-01T02:30:19Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -233,7 +217,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T02:20:16Z"
+    "fetchedAt": "2026-07-01T02:30:19Z"
   },
-  "generatedAt": "2026-07-01T02:20:16Z"
+  "generatedAt": "2026-07-01T02:30:19Z"
 }
