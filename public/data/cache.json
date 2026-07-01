@@ -3,19 +3,19 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "15227",
-        "trainName": "Muzaffarpur Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "00:45",
-        "expectedDepartureTime": "00:45",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "12509",
         "trainName": "Guwahati SF Express",
         "status": "scheduled",
         "scheduledDepartureTime": "23:55",
         "expectedDepartureTime": "23:55",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "15227",
+        "trainName": "Muzaffarpur Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "00:45",
+        "expectedDepartureTime": "00:45",
         "delayMinutes": 0
       },
       {
@@ -43,19 +43,19 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "12835",
-        "trainName": "SMVT Bengaluru SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "02:27",
-        "expectedDepartureTime": "02:27",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "12683",
         "trainName": "SMVT Bengaluru SF Express",
         "status": "scheduled",
         "scheduledDepartureTime": "02:55",
         "expectedDepartureTime": "02:55",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "12835",
+        "trainName": "SMVT Bengaluru SF Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "02:27",
+        "expectedDepartureTime": "02:27",
         "delayMinutes": 0
       },
       {
@@ -75,12 +75,12 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T18:20:19Z"
+    "fetchedAt": "2026-07-01T18:30:17Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-07-01T18:20:19Z"
+    "fetchedAt": "2026-07-01T18:30:17Z"
   },
-  "generatedAt": "2026-07-01T18:20:19Z"
+  "generatedAt": "2026-07-01T18:30:17Z"
 }
