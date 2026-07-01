@@ -3,14 +3,6 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "16552",
-        "trainName": "MGR Chennai Central SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "08:20",
-        "expectedDepartureTime": "08:20",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "15228",
         "trainName": "SMVT Bengaluru Express",
         "status": "scheduled",
@@ -43,19 +35,19 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "06524",
-        "trainName": "SMVT Bengaluru Special Fare AC Special",
-        "status": "scheduled",
-        "scheduledDepartureTime": "07:00",
-        "expectedDepartureTime": "07:00",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "66542",
         "trainName": "KSR Bengaluru - Whitefield MEMU",
         "status": "scheduled",
         "scheduledDepartureTime": "09:45",
         "expectedDepartureTime": "09:45",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "06524",
+        "trainName": "SMVT Bengaluru Special Fare AC Special",
+        "status": "scheduled",
+        "scheduledDepartureTime": "07:00",
+        "expectedDepartureTime": "07:00",
         "delayMinutes": 0
       },
       {
@@ -83,19 +75,19 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "12864",
-        "trainName": "Howrah SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "10:55",
-        "expectedDepartureTime": "10:55",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "17316",
         "trainName": "Vasco-Da-Gama Weekly Express",
         "status": "scheduled",
         "scheduledDepartureTime": "10:50",
         "expectedDepartureTime": "10:50",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "12864",
+        "trainName": "Howrah SF Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "10:55",
+        "expectedDepartureTime": "10:55",
         "delayMinutes": 0
       },
       {
@@ -179,6 +171,22 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "12639",
+        "trainName": "Brindavan Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "12:50",
+        "expectedDepartureTime": "12:50",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "66511",
+        "trainName": "KSR Bengaluru - Marikuppam MEMU",
+        "status": "scheduled",
+        "scheduledDepartureTime": "12:50",
+        "expectedDepartureTime": "12:50",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "12295",
         "trainName": "Sanghamitra SF Express",
         "status": "scheduled",
@@ -193,9 +201,25 @@
         "scheduledDepartureTime": "11:44",
         "expectedDepartureTime": "11:44",
         "delayMinutes": 0
+      },
+      {
+        "trainNo": "66529",
+        "trainName": "Kuppam - KSR Bengaluru MEMU",
+        "status": "scheduled",
+        "scheduledDepartureTime": "08:29",
+        "expectedDepartureTime": "08:29",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "16552",
+        "trainName": "MGR Chennai Central SF Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "08:20",
+        "expectedDepartureTime": "08:20",
+        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T03:10:16Z"
+    "fetchedAt": "2026-07-01T03:20:16Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -225,7 +249,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T03:10:16Z"
+    "fetchedAt": "2026-07-01T03:20:16Z"
   },
-  "generatedAt": "2026-07-01T03:10:16Z"
+  "generatedAt": "2026-07-01T03:20:16Z"
 }
