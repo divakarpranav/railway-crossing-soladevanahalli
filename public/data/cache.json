@@ -3,11 +3,11 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "17210",
+        "trainNo": "17209",
         "trainName": "Seshadri Express",
         "status": "scheduled",
-        "scheduledDepartureTime": "11:10",
-        "expectedDepartureTime": "11:10",
+        "scheduledDepartureTime": "11:44",
+        "expectedDepartureTime": "11:44",
         "delayMinutes": 0
       },
       {
@@ -115,19 +115,19 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "12640",
+        "trainName": "Brindavan Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "15:40",
+        "expectedDepartureTime": "15:40",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "12296",
         "trainName": "Sanghamitra SF Express",
         "status": "scheduled",
         "scheduledDepartureTime": "15:00",
         "expectedDepartureTime": "15:00",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "17209",
-        "trainName": "Seshadri Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "11:44",
-        "expectedDepartureTime": "11:44",
         "delayMinutes": 0
       },
       {
@@ -139,7 +139,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T06:00:18Z"
+    "fetchedAt": "2026-07-01T06:10:19Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -153,7 +153,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T06:00:18Z"
+    "fetchedAt": "2026-07-01T06:10:19Z"
   },
-  "generatedAt": "2026-07-01T06:00:18Z"
+  "generatedAt": "2026-07-01T06:10:19Z"
 }
