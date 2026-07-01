@@ -3,22 +3,6 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "17316",
-        "trainName": "Vasco-Da-Gama Weekly Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "10:50",
-        "expectedDepartureTime": "10:50",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "12295",
-        "trainName": "Sanghamitra SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "09:29",
-        "expectedDepartureTime": "09:29",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "17210",
         "trainName": "Seshadri Express",
         "status": "scheduled",
@@ -123,6 +107,14 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "22601",
+        "trainName": "Sainagar Shirdi SF Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "15:30",
+        "expectedDepartureTime": "15:30",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "12296",
         "trainName": "Sanghamitra SF Express",
         "status": "scheduled",
@@ -145,17 +137,9 @@
         "scheduledDepartureTime": "14:35",
         "expectedDepartureTime": "14:35",
         "delayMinutes": 0
-      },
-      {
-        "trainNo": "12864",
-        "trainName": "Howrah SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "10:55",
-        "expectedDepartureTime": "10:55",
-        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T05:50:17Z"
+    "fetchedAt": "2026-07-01T06:00:18Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -169,7 +153,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T05:50:17Z"
+    "fetchedAt": "2026-07-01T06:00:18Z"
   },
-  "generatedAt": "2026-07-01T05:50:17Z"
+  "generatedAt": "2026-07-01T06:00:18Z"
 }
