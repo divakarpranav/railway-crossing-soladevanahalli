@@ -19,6 +19,14 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "16598",
+        "trainName": "SMVT Bengaluru Amrit Bharat Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "01:52",
+        "expectedDepartureTime": "01:52",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "12509",
         "trainName": "Guwahati SF Express",
         "status": "scheduled",
@@ -43,14 +51,6 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "66537",
-        "trainName": "Bangarapet Junction - SMVT Bengaluru Passenger",
-        "status": "scheduled",
-        "scheduledDepartureTime": "21:42",
-        "expectedDepartureTime": "21:42",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "16219",
         "trainName": "Tirupati Express",
         "status": "scheduled",
@@ -67,12 +67,12 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T16:10:18Z"
+    "fetchedAt": "2026-07-01T16:20:18Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-07-01T16:10:18Z"
+    "fetchedAt": "2026-07-01T16:20:18Z"
   },
-  "generatedAt": "2026-07-01T16:10:18Z"
+  "generatedAt": "2026-07-01T16:20:18Z"
 }
