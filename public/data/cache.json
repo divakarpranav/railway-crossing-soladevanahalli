@@ -59,19 +59,19 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "17316",
-        "trainName": "Vasco-Da-Gama Weekly Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "10:50",
-        "expectedDepartureTime": "10:50",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "12864",
         "trainName": "Howrah SF Express",
         "status": "scheduled",
         "scheduledDepartureTime": "10:55",
         "expectedDepartureTime": "10:55",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "17316",
+        "trainName": "Vasco-Da-Gama Weekly Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "10:50",
+        "expectedDepartureTime": "10:50",
         "delayMinutes": 0
       },
       {
@@ -91,19 +91,19 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "04132",
-        "trainName": "SMVT Bengaluru - Kanpur Central Passenger",
-        "status": "scheduled",
-        "scheduledDepartureTime": "07:25",
-        "expectedDepartureTime": "07:25",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "17210",
         "trainName": "Seshadri Express",
         "status": "scheduled",
         "scheduledDepartureTime": "11:10",
         "expectedDepartureTime": "11:10",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "04132",
+        "trainName": "SMVT Bengaluru - Kanpur Central Passenger",
+        "status": "scheduled",
+        "scheduledDepartureTime": "07:25",
+        "expectedDepartureTime": "07:25",
         "delayMinutes": 0
       },
       {
@@ -123,19 +123,19 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "12510",
-        "trainName": "SMVT Bengaluru SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "09:04",
-        "expectedDepartureTime": "09:04",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "66581",
         "trainName": "KSR Bengaluru - Bangarapet MEMU",
         "status": "scheduled",
         "scheduledDepartureTime": "12:10",
         "expectedDepartureTime": "12:10",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "12510",
+        "trainName": "SMVT Bengaluru SF Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "09:04",
+        "expectedDepartureTime": "09:04",
         "delayMinutes": 0
       },
       {
@@ -177,17 +177,9 @@
         "scheduledDepartureTime": "11:44",
         "expectedDepartureTime": "11:44",
         "delayMinutes": 0
-      },
-      {
-        "trainNo": "66529",
-        "trainName": "Kuppam - KSR Bengaluru MEMU",
-        "status": "scheduled",
-        "scheduledDepartureTime": "08:29",
-        "expectedDepartureTime": "08:29",
-        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T03:30:17Z"
+    "fetchedAt": "2026-07-01T03:40:16Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -217,7 +209,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T03:30:17Z"
+    "fetchedAt": "2026-07-01T03:40:16Z"
   },
-  "generatedAt": "2026-07-01T03:30:17Z"
+  "generatedAt": "2026-07-01T03:40:16Z"
 }
