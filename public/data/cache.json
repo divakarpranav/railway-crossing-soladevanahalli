@@ -11,14 +11,6 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "15227",
-        "trainName": "Muzaffarpur Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "00:45",
-        "expectedDepartureTime": "00:45",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "66538",
         "trainName": "SMVT Bengaluru - Bangarapet Junction Passenger",
         "status": "scheduled",
@@ -32,6 +24,14 @@
         "status": "scheduled",
         "scheduledDepartureTime": "00:15",
         "expectedDepartureTime": "00:15",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "15227",
+        "trainName": "Muzaffarpur Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "00:45",
+        "expectedDepartureTime": "00:45",
         "delayMinutes": 0
       },
       {
@@ -65,14 +65,22 @@
         "scheduledDepartureTime": "03:20",
         "expectedDepartureTime": "03:20",
         "delayMinutes": 0
+      },
+      {
+        "trainNo": "11006",
+        "trainName": "Dadar PDY-DR CHALUKYA EXP",
+        "status": "scheduled",
+        "scheduledDepartureTime": "04:36",
+        "expectedDepartureTime": "04:36",
+        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T19:00:17Z"
+    "fetchedAt": "2026-07-01T19:10:16Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-07-01T19:00:17Z"
+    "fetchedAt": "2026-07-01T19:10:16Z"
   },
-  "generatedAt": "2026-07-01T19:00:17Z"
+  "generatedAt": "2026-07-01T19:10:16Z"
 }
