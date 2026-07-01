@@ -3,19 +3,11 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "12864",
-        "trainName": "Howrah SF Express",
+        "trainNo": "66547",
+        "trainName": "Marikuppam MEMU",
         "status": "scheduled",
-        "scheduledDepartureTime": "10:55",
-        "expectedDepartureTime": "10:55",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "66548",
-        "trainName": "Krishnarajapuram MEMU",
-        "status": "scheduled",
-        "scheduledDepartureTime": "",
-        "expectedDepartureTime": "",
+        "scheduledDepartureTime": "11:10",
+        "expectedDepartureTime": "11:10",
         "delayMinutes": 0
       },
       {
@@ -32,14 +24,6 @@
         "status": "scheduled",
         "scheduledDepartureTime": "09:29",
         "expectedDepartureTime": "09:29",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "66547",
-        "trainName": "Marikuppam MEMU",
-        "status": "scheduled",
-        "scheduledDepartureTime": "11:10",
-        "expectedDepartureTime": "11:10",
         "delayMinutes": 0
       },
       {
@@ -88,14 +72,6 @@
         "status": "scheduled",
         "scheduledDepartureTime": "12:25",
         "expectedDepartureTime": "12:25",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "12510",
-        "trainName": "SMVT Bengaluru SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "09:04",
-        "expectedDepartureTime": "09:04",
         "delayMinutes": 0
       },
       {
@@ -169,9 +145,17 @@
         "scheduledDepartureTime": "14:35",
         "expectedDepartureTime": "14:35",
         "delayMinutes": 0
+      },
+      {
+        "trainNo": "12864",
+        "trainName": "Howrah SF Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "10:55",
+        "expectedDepartureTime": "10:55",
+        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T05:30:17Z"
+    "fetchedAt": "2026-07-01T05:40:18Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -185,7 +169,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T05:30:17Z"
+    "fetchedAt": "2026-07-01T05:40:18Z"
   },
-  "generatedAt": "2026-07-01T05:30:17Z"
+  "generatedAt": "2026-07-01T05:40:18Z"
 }
