@@ -3,19 +3,11 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "12777",
-        "trainName": "Thiruvananthapuram North Weekly SF Express",
+        "trainNo": "22601",
+        "trainName": "Sainagar Shirdi SF Express",
         "status": "scheduled",
-        "scheduledDepartureTime": "15:00",
-        "expectedDepartureTime": "15:00",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "12296",
-        "trainName": "Sanghamitra SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "15:00",
-        "expectedDepartureTime": "15:00",
+        "scheduledDepartureTime": "15:30",
+        "expectedDepartureTime": "15:30",
         "delayMinutes": 0
       },
       {
@@ -24,6 +16,14 @@
         "status": "scheduled",
         "scheduledDepartureTime": "16:23",
         "expectedDepartureTime": "16:23",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "12296",
+        "trainName": "Sanghamitra SF Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "15:00",
+        "expectedDepartureTime": "15:00",
         "delayMinutes": 0
       },
       {
@@ -115,6 +115,14 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "16522",
+        "trainName": "Bangarapet MEMU Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "20:07",
+        "expectedDepartureTime": "20:07",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "08404",
         "trainName": "Bhubaneswar Special Fare SF Special",
         "status": "scheduled",
@@ -145,9 +153,17 @@
         "scheduledDepartureTime": "17:55",
         "expectedDepartureTime": "17:55",
         "delayMinutes": 0
+      },
+      {
+        "trainNo": "12777",
+        "trainName": "Thiruvananthapuram North Weekly SF Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "15:00",
+        "expectedDepartureTime": "15:00",
+        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T10:30:17Z"
+    "fetchedAt": "2026-07-01T10:40:17Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -193,7 +209,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T10:30:17Z"
+    "fetchedAt": "2026-07-01T10:40:17Z"
   },
-  "generatedAt": "2026-07-01T10:30:17Z"
+  "generatedAt": "2026-07-01T10:40:17Z"
 }
