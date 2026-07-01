@@ -19,6 +19,14 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "16022",
+        "trainName": "Kaveri Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "00:15",
+        "expectedDepartureTime": "00:15",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "16521",
         "trainName": "KSR Bengaluru MEMU Express",
         "status": "scheduled",
@@ -27,19 +35,11 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "16522",
-        "trainName": "Bangarapet MEMU Express",
+        "trainNo": "22681",
+        "trainName": "MGR Chennai Central Weekly SF Express",
         "status": "scheduled",
-        "scheduledDepartureTime": "20:07",
-        "expectedDepartureTime": "20:07",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "16526",
-        "trainName": "Kanniyakumari Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "20:36",
-        "expectedDepartureTime": "20:36",
+        "scheduledDepartureTime": "23:25",
+        "expectedDepartureTime": "23:25",
         "delayMinutes": 0
       },
       {
@@ -59,11 +59,11 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "22681",
-        "trainName": "MGR Chennai Central Weekly SF Express",
+        "trainNo": "16526",
+        "trainName": "Kanniyakumari Express",
         "status": "scheduled",
-        "scheduledDepartureTime": "23:25",
-        "expectedDepartureTime": "23:25",
+        "scheduledDepartureTime": "20:36",
+        "expectedDepartureTime": "20:36",
         "delayMinutes": 0
       },
       {
@@ -107,12 +107,12 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T14:40:19Z"
+    "fetchedAt": "2026-07-01T14:50:18Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-07-01T14:40:19Z"
+    "fetchedAt": "2026-07-01T14:50:18Z"
   },
-  "generatedAt": "2026-07-01T14:40:19Z"
+  "generatedAt": "2026-07-01T14:50:18Z"
 }
