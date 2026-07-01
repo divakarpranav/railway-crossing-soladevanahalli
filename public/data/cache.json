@@ -3,6 +3,14 @@
     "stationCode": "KJM",
     "trains": [
       {
+        "trainNo": "22681",
+        "trainName": "MGR Chennai Central Weekly SF Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "23:25",
+        "expectedDepartureTime": "23:25",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "12607",
         "trainName": "Lalbagh SF Express",
         "status": "scheduled",
@@ -35,14 +43,6 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "22681",
-        "trainName": "MGR Chennai Central Weekly SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "23:25",
-        "expectedDepartureTime": "23:25",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "66520",
         "trainName": "KSR Bengaluru - Marikuppam MEMU",
         "status": "scheduled",
@@ -51,19 +51,19 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "66537",
-        "trainName": "Bangarapet Junction - SMVT Bengaluru Passenger",
-        "status": "scheduled",
-        "scheduledDepartureTime": "21:42",
-        "expectedDepartureTime": "21:42",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "16526",
         "trainName": "Kanniyakumari Express",
         "status": "scheduled",
         "scheduledDepartureTime": "20:36",
         "expectedDepartureTime": "20:36",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "66537",
+        "trainName": "Bangarapet Junction - SMVT Bengaluru Passenger",
+        "status": "scheduled",
+        "scheduledDepartureTime": "21:42",
+        "expectedDepartureTime": "21:42",
         "delayMinutes": 0
       },
       {
@@ -107,12 +107,12 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T14:50:18Z"
+    "fetchedAt": "2026-07-01T15:00:18Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-07-01T14:50:18Z"
+    "fetchedAt": "2026-07-01T15:00:18Z"
   },
-  "generatedAt": "2026-07-01T14:50:18Z"
+  "generatedAt": "2026-07-01T15:00:18Z"
 }
