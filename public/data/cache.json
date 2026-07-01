@@ -115,7 +115,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T07:50:17Z"
+    "fetchedAt": "2026-07-01T08:00:17Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -145,7 +145,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T07:50:17Z"
+    "fetchedAt": "2026-07-01T08:00:17Z"
   },
-  "generatedAt": "2026-07-01T07:50:17Z"
+  "generatedAt": "2026-07-01T08:00:17Z"
 }
