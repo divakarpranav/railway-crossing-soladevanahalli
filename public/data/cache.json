@@ -3,14 +3,6 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "22601",
-        "trainName": "Sainagar Shirdi SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "15:30",
-        "expectedDepartureTime": "15:30",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "66543",
         "trainName": "Kuppam - KSR Bengaluru MEMU",
         "status": "scheduled",
@@ -123,14 +115,6 @@
         "delayMinutes": 0
       },
       {
-        "trainNo": "08404",
-        "trainName": "Bhubaneswar Special Fare SF Special",
-        "status": "scheduled",
-        "scheduledDepartureTime": "16:12",
-        "expectedDepartureTime": "16:12",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "06549",
         "trainName": "Bengaluru Cantt. (Bangalore) - Kannur (Cannanore) Passenger",
         "status": "scheduled",
@@ -163,19 +147,11 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T10:40:17Z"
+    "fetchedAt": "2026-07-01T10:50:17Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [
-      {
-        "trainNo": "66564",
-        "trainName": "Hosur - Yesvantpur MEMU",
-        "status": "scheduled",
-        "scheduledDepartureTime": "16:01",
-        "expectedDepartureTime": "16:01",
-        "delayMinutes": 0
-      },
       {
         "trainNo": "66586",
         "trainName": "Hosur - Yesvantpur MEMU",
@@ -209,7 +185,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T10:40:17Z"
+    "fetchedAt": "2026-07-01T10:50:17Z"
   },
-  "generatedAt": "2026-07-01T10:40:17Z"
+  "generatedAt": "2026-07-01T10:50:17Z"
 }
