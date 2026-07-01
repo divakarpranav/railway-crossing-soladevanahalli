@@ -158,4 +158,4 @@ The app loads using the seed data in `public/data/cache.json`.
 
 ## Setting this up for a different crossing
 
-See **DEPLOYMENT.md** for a step-by-step guide.
+See **[Deployment.md](Deployment.md)** for a step-by-step guide.
