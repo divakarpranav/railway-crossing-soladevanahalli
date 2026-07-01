@@ -3,14 +3,6 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "66581",
-        "trainName": "KSR Bengaluru - Bangarapet MEMU",
-        "status": "scheduled",
-        "scheduledDepartureTime": "12:10",
-        "expectedDepartureTime": "12:10",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "12639",
         "trainName": "Brindavan Express",
         "status": "scheduled",
@@ -115,7 +107,7 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T07:00:17Z"
+    "fetchedAt": "2026-07-01T07:10:18Z"
   },
   "blrr": {
     "stationCode": "BLRR",
@@ -135,9 +127,17 @@
         "scheduledDepartureTime": "16:01",
         "expectedDepartureTime": "16:01",
         "delayMinutes": 0
+      },
+      {
+        "trainNo": "16211",
+        "trainName": "Salem Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "16:36",
+        "expectedDepartureTime": "16:36",
+        "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T07:00:17Z"
+    "fetchedAt": "2026-07-01T07:10:18Z"
   },
-  "generatedAt": "2026-07-01T07:00:17Z"
+  "generatedAt": "2026-07-01T07:10:18Z"
 }
