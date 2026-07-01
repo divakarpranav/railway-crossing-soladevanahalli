@@ -3,14 +3,6 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "16219",
-        "trainName": "Tirupati Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "20:47",
-        "expectedDepartureTime": "20:47",
-        "delayMinutes": 0
-      },
-      {
         "trainNo": "12607",
         "trainName": "Lalbagh SF Express",
         "status": "scheduled",
@@ -75,11 +67,35 @@
         "delayMinutes": 0
       },
       {
+        "trainNo": "16219",
+        "trainName": "Tirupati Express",
+        "status": "scheduled",
+        "scheduledDepartureTime": "20:47",
+        "expectedDepartureTime": "20:47",
+        "delayMinutes": 0
+      },
+      {
         "trainNo": "12509",
         "trainName": "Guwahati SF Express",
         "status": "scheduled",
         "scheduledDepartureTime": "23:55",
         "expectedDepartureTime": "23:55",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "06547",
+        "trainName": "Thiruvananthapuram North Special Fare AC Special",
+        "status": "scheduled",
+        "scheduledDepartureTime": "19:37",
+        "expectedDepartureTime": "19:37",
+        "delayMinutes": 0
+      },
+      {
+        "trainNo": "07097",
+        "trainName": "Hyderabad Deccan Nampally - Mangaluru Central (Mangalore) Passenger",
+        "status": "scheduled",
+        "scheduledDepartureTime": "19:02",
+        "expectedDepartureTime": "19:02",
         "delayMinutes": 0
       },
       {
@@ -91,12 +107,12 @@
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T14:30:17Z"
+    "fetchedAt": "2026-07-01T14:40:19Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-07-01T14:30:17Z"
+    "fetchedAt": "2026-07-01T14:40:19Z"
   },
-  "generatedAt": "2026-07-01T14:30:17Z"
+  "generatedAt": "2026-07-01T14:40:19Z"
 }
