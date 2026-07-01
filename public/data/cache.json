@@ -3,68 +3,20 @@
     "stationCode": "KJM",
     "trains": [
       {
-        "trainNo": "16598",
-        "trainName": "SMVT Bengaluru Amrit Bharat Express",
+        "trainNo": "66570",
+        "trainName": "Tumakuru - Yesvantpur MEMU",
         "status": "scheduled",
-        "scheduledDepartureTime": "01:52",
-        "expectedDepartureTime": "01:52",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "66538",
-        "trainName": "SMVT Bengaluru - Bangarapet Junction Passenger",
-        "status": "scheduled",
-        "scheduledDepartureTime": "04:22",
-        "expectedDepartureTime": "04:22",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "16021",
-        "trainName": "Kaveri Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "02:45",
-        "expectedDepartureTime": "02:45",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "12683",
-        "trainName": "SMVT Bengaluru SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "02:55",
-        "expectedDepartureTime": "02:55",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "12835",
-        "trainName": "SMVT Bengaluru SF Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "02:27",
-        "expectedDepartureTime": "02:27",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "16220",
-        "trainName": "Chamarajanagar Express",
-        "status": "scheduled",
-        "scheduledDepartureTime": "03:20",
-        "expectedDepartureTime": "03:20",
-        "delayMinutes": 0
-      },
-      {
-        "trainNo": "11006",
-        "trainName": "Dadar PDY-DR CHALUKYA EXP",
-        "status": "scheduled",
-        "scheduledDepartureTime": "04:36",
-        "expectedDepartureTime": "04:36",
+        "scheduledDepartureTime": "05:18",
+        "expectedDepartureTime": "05:18",
         "delayMinutes": 0
       }
     ],
-    "fetchedAt": "2026-07-01T19:40:17Z"
+    "fetchedAt": "2026-07-01T20:46:58Z"
   },
   "blrr": {
     "stationCode": "BLRR",
     "trains": [],
-    "fetchedAt": "2026-07-01T19:40:17Z"
+    "fetchedAt": "2026-07-01T20:46:58Z"
   },
-  "generatedAt": "2026-07-01T19:40:17Z"
+  "generatedAt": "2026-07-01T20:46:58Z"
 }
